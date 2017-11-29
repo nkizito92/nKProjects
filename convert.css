@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding:0;
+}
+.move{
+  padding:20px;
+  margin:auto;
+}
+#val{
+  font-size:16pt;
+  font-weight:bold;
+}
+#prev{
+  position:relative;
+  color:gray;
+  border:2px black solid;
+  width:300px;
+  height:20px;
+ 
+}
+#prevM {
+  position:relative;
+  font-size:16pt;
+  color:purple;
+  text-shadow: 2px 2px 2px lightseagreen;
+  border:2px dotted blue;
+  width:300px;
+  height:30px;
+    
+ }
+#result{
+  font-size:21pt;
+  font-weight:bold;
+  width:100px;
+}
+.removeDo li:hover ul{
+  display:block;
+   
+}
+.removeDo{
+  position:relative;
+  display:block;
+  left:30%;
+}
+.removeDo ul{
+  margin:0px;
+  padding:0px;
+}
+.removeDo li{
+position:relative;
+
+list-style-type:none;
+}
+.removeDo ul:after{
+  content:"....";
+  visibility:hidden;
+  display:block;
+  height:2px;
+}
+
+.removeDo ul ul {
+  background-color:rgb(180, 180, 180);
+  position:absolute;
+  left:0px;
+  width:200px;
+  display:none;
+}
+
+#centimeters,#inches,#foots,#millimeters{
+  display:block;
+  font-weight:bold;
+ 
+}
+
+#centimeters:hover{
+  color:white;
+}
+#centimeters:active{
+  color:green;
+}
+ #inches:hover{
+  color:white;
+}
+ #foots:hover{
+  color:white;
+}
+ #millimeters:hover{
+  color:white;
+}
+
+#formula{
+  position:absolute;
+  font-size:20pt;
+  width:300px;
+  height:30px;
+  border:2px solid green; 
+  left:700px;
+ margin:auto;  
+}

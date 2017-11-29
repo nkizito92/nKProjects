@@ -1,0 +1,428 @@
+* {
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+#immg {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*here is where I change the background color of section*/
+
+#pos {
+    position: relative;
+    margin: auto;
+    width: 1347px;
+    z-index: 0;
+}
+
+#greetings {
+    position: absolute;
+    font-size: 16pt;
+    color: white;
+    width: 200px;
+    top: 400px;
+    left: 42%;
+    text-align: center;
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 80px;
+    padding: 20px;
+}
+
+.fixedNav {
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+    margin: auto;
+}
+
+.bground {
+    position: relative;
+    background-color: rgb(108, 108, 108);
+    margin: auto;
+    width: 800px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.background {
+    position: relative;
+    background-color: rgb(179, 179, 179);
+    margin: auto;
+
+}
+
+nav {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    width: 700px;
+    background-color: rgb(0, 0, 0);
+}
+
+.clickMes {
+    color: black;
+    font-size: 17pt;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.clickMes:active {
+    color: cyan;
+}
+
+.clickMes:hover {
+    animation: clickmes 1.3s infinite;
+}
+
+@keyframes clickmes {
+    0% {
+        background-color: none;
+    }
+    50% {
+        background-color: cyan;
+    }
+    100% {
+        background-color: none;
+    }
+}
+
+.links {
+    color: #FAFAFA;
+    font-weight: bold;
+    font-size: 18pt;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(1, 231, 255, 0.40);
+    margin: 10px;
+}
+
+.links:hover {
+    transition: 0.2s;
+    background-color: rgb(0, 218, 245);
+    padding: 1px;
+}
+
+.links:active {
+    color: rgb(249, 209, 24);
+    background-color: #5E5E5E;
+    transition: 0s;
+}
+
+#evens {}
+
+#img1 {
+    opacity: 0;
+}
+
+.slide {
+    position: relative;
+
+    animation: slideA 1.3s normal;
+    opacity: 1;
+}
+
+.slideback {
+    position: relative;
+
+    animation: slideB .5s normal;
+    opacity: 1;
+}
+
+@keyframes slideA {
+    0% {
+        opacity: 0;
+        left: -600px;
+    }
+    100% {
+        opacity: 1;
+        left: 1px;
+    }
+
+}
+
+@keyframes slideB {
+    100% {
+        opacity: 0;
+        left: -600px;
+    }
+    0% {
+        opacity: 1;
+        left: 1px;
+    }
+
+}
+
+/*img styling*/
+
+#hea {
+    margin-top: 0;
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+    width: auto;
+    max-width: 1500px;
+    min-width: 320px;
+}
+
+header {
+    position: relative;
+    background-color: #303030;
+    margin: auto;
+    width: 700px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+header img {
+    position: relative;
+    left: 300px;
+    width: 200px;
+    margin: auto;
+}
+
+header p {
+    margin: auto;
+    font-size: 14pt;
+    width: 600px;
+}
+
+footer {
+    position: relative;
+    background-color: #303030;
+    margin: auto;
+    font-size: 12pt;
+}
+
+footer li {
+    list-style: none;
+}
+
+#read {
+    font-size: 16pt;
+    color: white;
+}
+
+#li {
+    position: relative;
+    width: 120px;
+    text-align: center;
+    left: 40%;
+}
+
+#facebook {
+    position: absolute;
+    margin: 0;
+    color: #4267b2;
+    left: 70px;
+}
+
+
+#youtube {
+    position: absolute;
+    margin: 0;
+    left: 40px;
+    color: red;
+
+}
+
+#facebook:active {
+    color: white;
+
+}
+
+small {
+    color: white;
+}
+
+
+#youtube:active {
+    color: white;
+
+}
+
+#linkedIn {
+    position: relative;
+    left: 55px;
+    color: #028181;
+}
+
+#linkedIn:active {
+    color: white;
+}
+
+
+
+/* About me */
+
+.bb {
+    animation: c 4s infinite;
+}
+
+@keyframes c {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#dd {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+#oneLine {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: white;
+}
+
+#me {
+    position: absolute;
+    left: -10px;
+    top: 60px;
+    opacity: 1;
+    animation: cc 1s normal;
+    transform: rotate(-90deg);
+}
+
+@keyframes cc {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+    50% {
+        position: absolute;
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Interest  */
+
+#iback {
+    background-image: url(../Pics/PsVr.JPG);
+    background-repeat: no-repeat;
+    background-color: #020239;
+    background-size: cover;
+    margin: auto;
+
+}
+
+#ivideo {
+    position: relative;
+    margin: auto;
+    left: 65px;
+}
+
+.ibground {
+    position: relative;
+    background-color: rgba(108, 108, 108, 0.4);
+    margin: auto;
+    width: 800px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 17pt;
+}
+
+/*Hobbies  */
+
+/*Contacts  */
+legend {
+    text-shadow: 2px 2px 4px white;
+    font-size: 34pt; 
+    font-weight: bold;
+     animation: appear 2s normal;
+}
+form {
+     animation: open 1s normal;
+    font-size: 17pt;
+    position: relative;
+    margin: auto;
+    width: 600px;
+    background-color: rgba(76, 172, 195, 0.46);
+    
+}
+
+input {
+    animation: appear 2s normal;
+    width: 99%;
+    border-radius: 5px;
+}
+@keyframes appear {
+    0% {opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity:1;}
+}
+#EmailCenter {
+    margin-top: 1%;
+width: 98.7%;
+    border-radius: 5px;
+     animation: appear 2s normal;
+}
+
+#submit {
+    position: relative;
+    width:auto;
+    color:white;
+    background-color:darkcyan;
+    font-size: 16pt;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.Contactbground {
+   
+    position: relative;
+/*    background-image: url(../Pics/DragonWarriors.jpg);*/
+    background-position: center;
+    background-color: black;
+    margin: auto;
+    width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@keyframes open {
+    0%{height: 0;}
+    100% {height:518px;}
+}
+
+
+#backgroundImg {
+    position: fixed;
+    z-index: 0;
+   width: 100%;
+    height: 1100px;
+    left:0;
+    top:-250px;
+}

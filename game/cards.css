@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+}
+.clickMes {
+    color: white;
+    font-size: 20pt;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.clickMes:active {
+    color: cyan;
+}
+
+.clickMes:hover {
+    animation: clickmes 1.3s infinite;
+}
+
+@keyframes clickmes {
+    0% {
+        background-color: none;
+    }
+    50% {
+        background-color: cyan;
+    }
+    100% {
+        background-color: none;
+    }
+}
+
+.move {
+    position: relative;
+    top: 100px;
+}
+
+.firecrack {
+    background: url(../Pics/fireworks.gif) 810px 400px !important;
+   
+}
+div#cards {
+    border: 2px black solid;
+    width: 810px;
+    height: 400px;
+    background: linear-gradient(black, cyan, black);
+    margin: auto;
+}
+
+div#cards > div {
+    border: 1px black solid;
+    height:180px;
+    width:180px;
+    background: url('../Pics/fire.jpg') no-repeat;
+    background-size: 180px 180px;
+    margin: 10px;
+    float: left;
+    line-height: 180px;
+    text-align:center;
+    font-size: 45pt;
+    cursor: pointer;
+}
+
+.class {
+    width:500px;
+    height: 400px
+}
+#winner {
+    position: relative;
+    font-size: 29pt;
+    text-align: center;
+    bottom: 230px;
+    color: white;
+    text-shadow: 3px 3px 5px cyan;
+    width: 480px;
+    margin:auto;
+}
+
+#reset {
+    position: relative;
+    margin:auto;
+    bottom: 200px;
+    
+}
+
+#hh {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+
+}
+
+#textAlign {
+    position: relative;
+    margin: auto;
+     width: 810px;  
+    text-align: center;
+}
