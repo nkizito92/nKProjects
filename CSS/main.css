@@ -257,14 +257,22 @@ small {
 
 #linkedIn {
     position: relative;
-    left: 55px;
+    left: 70px;
     color: #028181;
 }
 
 #linkedIn:active {
     color: white;
 }
+#github {
+    position: relative;
+   color:purple;
+    left: 69px;
+}
 
+#github:active {
+    color: white;
+}
 
 
 /* About me */
