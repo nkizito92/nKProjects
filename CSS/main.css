@@ -277,34 +277,6 @@ small {
 
 /* About me */
 
-.bb {
-    animation: c 4s infinite;
-}
-
-@keyframes c {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#dd {
-    height: 300px;
-    width: 300px;
-    background-color: blue;
-}
-
 #oneLine {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -347,10 +319,26 @@ small {
 
 #ivideo {
     position: relative;
-    margin: auto;
-    left: 65px;
+    margin-bottom: 30px;
+    left:30%;
 }
-
+#ivideo2 {
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+.smallP1{
+    position: absolute;
+    width: 250px; 
+    right: 100%;
+}
+.smallP2{
+    position: absolute;
+    width: 250px;
+    left: 71%;
+    
+}
 .ibground {
     position: relative;
     background-color: rgba(108, 108, 108, 0.4);
