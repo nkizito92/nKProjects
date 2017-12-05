@@ -3,6 +3,7 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
+
 #immg {
     position: relative;
     width: 100%;
@@ -34,7 +35,7 @@ button {
     top: 400px;
     left: 42%;
     text-align: center;
-    background-color: rgba(225, 225, 225, 0.2);
+    background-color: rgba(225, 225, 225, 0.3);
     border-radius: 80px;
     padding: 20px;
 }
@@ -46,7 +47,9 @@ button {
     width: 100%;
     margin: auto;
 }
-
+.underline {
+    text-decoration: underline;
+}
 .bground {
     position: relative;
     background-color: rgb(108, 108, 108);
@@ -264,9 +267,10 @@ small {
 #linkedIn:active {
     color: white;
 }
+
 #github {
     position: relative;
-   color:purple;
+    color: purple;
     left: 69px;
 }
 
@@ -320,25 +324,29 @@ small {
 #ivideo {
     position: relative;
     margin-bottom: 30px;
-    left:30%;
+    left: 30%;
 }
+
 #ivideo2 {
     margin-top: 80px;
     position: relative;
     margin-bottom: 40px;
-    
+
 }
-.smallP1{
+
+.smallP1 {
     position: absolute;
-    width: 250px; 
+    width: 250px;
     right: 100%;
 }
-.smallP2{
+
+.smallP2 {
     position: absolute;
     width: 250px;
     left: 71%;
-    
+
 }
+
 .ibground {
     position: relative;
     background-color: rgba(108, 108, 108, 0.4);
@@ -354,20 +362,31 @@ small {
 /*Hobbies  */
 
 /*Contacts  */
+
 legend {
     text-shadow: 2px 2px 4px white;
-    font-size: 34pt; 
+    font-size: 34pt;
     font-weight: bold;
-     animation: appear 2s normal;
+    animation: appear 2s normal;
 }
+
 form {
-     animation: open 1s normal;
+    animation: open 1s normal;
     font-size: 17pt;
     position: relative;
     margin: auto;
     width: 600px;
     background-color: rgba(76, 172, 195, 0.46);
-    
+
+}
+
+@keyframes open {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 518px;
+    }
 }
 
 input {
@@ -375,32 +394,40 @@ input {
     width: 99%;
     border-radius: 5px;
 }
+
 @keyframes appear {
-    0% {opacity: 0;}
-    50%{opacity: 0;}
-    100%{opacity:1;}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 #EmailCenter {
     margin-top: 1%;
-width: 98.7%;
+    width: 98.7%;
     border-radius: 5px;
-     animation: appear 2s normal;
+    animation: appear 2s normal;
 }
 
 #submit {
     position: relative;
-    width:auto;
-    color:white;
-    background-color:darkcyan;
+    width: auto;
+    color: white;
+    background-color: darkcyan;
     font-size: 16pt;
     padding: 5px;
     border-radius: 8px;
 }
 
 .Contactbground {
-   
+
     position: relative;
-/*    background-image: url(../Pics/DragonWarriors.jpg);*/
+    /*    background-image: url(../Pics/DragonWarriors.jpg);*/
     background-position: center;
     background-color: black;
     margin: auto;
@@ -408,17 +435,12 @@ width: 98.7%;
     padding-left: 20px;
     padding-right: 20px;
 }
-@keyframes open {
-    0%{height: 0;}
-    100% {height:518px;}
-}
-
 
 #backgroundImg {
     position: fixed;
     z-index: 0;
-   width: 100%;
+    width: 100%;
     height: 1100px;
-    left:0;
-    top:-250px;
+    left: 0;
+    top: -250px;
 }
