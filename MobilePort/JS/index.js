@@ -22,7 +22,7 @@ function index() {
     var slideD = document.getElementById("img5");
 
     function slide1() {
-        if (document.body.scrollTop > 980 || document.documentElement.scrollTop > 980) {
+        if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
             slide.className = "slide";
             slide.style.opacity = 1;
         } else {
@@ -35,7 +35,7 @@ function index() {
     window.addEventListener("scroll", slide1);
 
     function slide2() {
-        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+        if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
             slideB.className = "slide";
             slideB.style.opacity = 1;
         } else {
@@ -48,7 +48,7 @@ function index() {
     window.addEventListener("scroll", slide2);
 
     function slide3() {
-        if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
             slideC.className = "slide";
             slideC.style.opacity = 1;
         } else {
@@ -60,7 +60,7 @@ function index() {
     }
     window.addEventListener("scroll", slide3);
     function slide4() {
-        if (document.body.scrollTop > 2440|| document.documentElement.scrollTop > 2440) {
+        if (document.body.scrollTop > 1540|| document.documentElement.scrollTop > 1540) {
             slideD.className = "slide";
             slideD.style.opacity = 1;
         } else {

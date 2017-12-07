@@ -404,7 +404,7 @@ form {
     margin: auto;
     width: 320px;
     background-color: rgba(76, 172, 195, 0.46);
-
+    left: 37px;
 }
 
 @keyframes open {
@@ -472,5 +472,7 @@ input {
     top: -250px;
 }
 .foot {
+    position: relative;
     width:360px;
+    left: 18px;
 }
