@@ -35,6 +35,7 @@ button {
     background-color: rgba(225, 225, 225, 0.3);
     border-radius: 80px;
     padding: 20px;
+    left: 80px;
 }
 hr {
     width: 30px;
@@ -63,10 +64,14 @@ hr {
     position: sticky;
     top: 0;
     z-index: 8;
-    width: auto;
+    width: 100%;
     margin: auto;
-    min-width: 370px;
-    max-width: 380px;
+    max-width: 320px;
+    animation: fadedd 1s infinite;
+}
+@keyframes fadedd {
+    0%{ background-color: rgba (0, 0, 0, 0)};
+    100%{ background-color: rgba (0, 0, 0, 1)};
 }
 .underline {
     text-decoration: underline;
@@ -89,7 +94,7 @@ hr {
 }
 
 nav {
-    text-align: center;
+    
     position: relative;
     padding: 10px;
     padding-left: 40px;
@@ -97,6 +102,17 @@ nav {
     margin: auto;
     width: 320px;
     background-color: rgb(0, 0, 0);
+}
+
+.apnav {
+    position: relative;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    width: 320px;
+    background-color: rgb(0, 0, 0);
+    
 }
 
 .clickMes {
@@ -124,6 +140,21 @@ nav {
     100% {
         background-color: none;
     }
+}
+
+.clickMes2{
+    color: white;
+    font-size: 17pt;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.clickMes2:active {
+    color: cyan;
+}
+
+.clickMes2:hover {
+    animation: clickmes 1.3s infinite;
 }
 
 .links {
@@ -206,14 +237,6 @@ header {
     width: 320px;
 }
 
-header img {
-    position: relative;
-    left: 300px;
-    width: 140px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .h1 {
     position: relative;
@@ -225,6 +248,7 @@ footer {
     background-color: #303030;
     margin: auto;
     font-size: 12pt;
+    width: 100%;
 }
 
 footer li {
@@ -314,7 +338,7 @@ small {
     top: 60px;
     opacity: 1;
     animation: cc 1s normal;
-    transform: rotate(-90deg);
+    width: 140px;
 }
 
 @keyframes cc {
@@ -476,3 +500,17 @@ input {
     width:360px;
     left: 18px;
 }
+.Abackground {
+    position: relative;
+    background-color: rgb(179, 179, 179);
+    margin: auto;
+    width:720px;
+}
+
+#centerB {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+

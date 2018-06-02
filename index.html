@@ -9,35 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/7f1d03a375.js"></script>
-    <script src="JS\index.js"></script>
+    <script src="JS/index.js"></script>
+
 </head>
 
-<body class="background" style="position: absolute;">
+<body class="background">
     <section id="pos">
         <img id="immg" src="Pics/CodingTree.jpg">
         <div id="greetings">
             <h1 style="font-size: 36pt;">Welcome</h1>
             <p style="font-size: 24pt;">Visitor</p>
+
         </div>
     </section>
 
     <nav id="navv">
         <!--my navigation bar -->
-        <a href="#Home" class="links">Home</a>
-        <a href="Pages/AboutMe.html" class="links">About Me</a>
-        <a href="Pages/Interest.html" class="links">Interest</a>
-        <a href="Pages/Contact.html" class="links">Contact</a>
-        <a href="game/matchCards.html" class="links">Applications</a>
+        <ul>
+            <li> <a href="" title="Home"><img src="Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="Pages/AboutMe.html">About Me</a></li>
+            <li> <a href="Pages/Interest.html">Interest</a></li>
+            <li> <a href="Pages/Contact.html">Contact</a></li>
+            <li> <a href="game/matchCards.html">Applications</a></li>
+        </ul>
+
     </nav>
 
     <header id="hea">
         Need a website for your business? I make website for clients at a reasonable price. Take a look around and enjoy yourself you may find something of your liking.
     </header>
-    <main class="bground">
+    <main>
 
         <div>
             <section id="evens">
-                <h1 class="underline">About me!!</h1>
+                <h1>About me!!</h1>
                 <img id="img1" src="Pics/me.png" width="600px">
                 <p style="font-size: 16pt; font-size:auto;"> Hi my name is Kizito. I graduated and achieved my bachelor’s degree in Computer Engineering at Texas Southern University the summer of 2016. During my time in college, I discovered my dream to become a web developer while taking my courses. Specifically, it was the c++ and java courses that peaked my interest in programming, from there I came across HTML and later on CSS and Javascript. Each one of these programming languages heightened my passion to strive to be a web developer.
                     <br><br>Want to learn more about me? Check out this page, you will find interesting things about me.</p>
@@ -48,7 +54,7 @@
             <section>
                 <br>
 
-                <h1 class="underline">Contact</h1>
+                <h1>Contact</h1>
                 <img id="img3" src="Pics/emailC.png" width="600px">
                 <p style="font-size: 16pt; font-size:auto;">Are you interest in make a website and want to talk business or do you just want to talk about things?!! Feel free to leave an email or text</p>
                 <a href="Pages/Contact.html" class="clickMes">Click Me!!</a>
@@ -57,7 +63,7 @@
             <section>
                 <br>
 
-                <h1 class="underline">Applications</h1>
+                <h1>Applications</h1>
                 <img id="img4" src="Pics/app.JPG" width="600px">
                 <p style="font-size: 16pt; font-size:auto;"> I made a game want to play it?!! Here below is one game I have created with JavaScript.</p>
                 <a href="game/matchCards.html" target="_blank" class="clickMes">Click Me!!</a>
@@ -65,31 +71,34 @@
             <section>
                 <br>
 
-                <h1 class="underline">Interest</h1>
+                <h1>Interest</h1>
                 <img id="img5" src="Pics/vrs.JPG" width="600px">
                 <p style="font-size: 16pt; font-size:auto;"> Virtual Reality and the Paralyzed?! Click here to find out what this is about.</p>
                 <a href="Pages/Interest.html" class="clickMes">Click Me!!</a>
             </section>
         </div>
-        <footer align="center">
-            <section>
-                <section id="li">
-                    <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                    <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                </section>
-            </section>
 
-            <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
-
-            <script>
-                index();
-            </script>
-        </footer>
 
     </main>
+    <footer>
+        <ul>
+            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+            </li>
+            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
 
+
+        <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
+
+        <script>
+            index();
+        </script>
+    </footer>
 
 </body>
 

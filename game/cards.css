@@ -1,7 +1,10 @@
 body {
     background-color: black;
+    margin: auto;
 }
 .clickMes {
+    position: relative;
+    bottom: 20px;
     color: white;
     font-size: 20pt;
     text-decoration: none;
@@ -29,8 +32,9 @@ body {
     }
 }
 
-.move {
+main {
     position: relative;
+    text-align: center;
     top: 100px;
 }
 
@@ -95,3 +99,5 @@ div#cards > div {
      width: 810px;  
     text-align: center;
 }
+
+

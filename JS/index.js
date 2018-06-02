@@ -1,14 +1,18 @@
 function index() {
     "use strict";
-
+    if (screen.width <= 800) {
+            window.location.replace("MobilePort/index.html");
+        }
+var nav =  document.getElementById("navv");
     function fixed() {
-        if (document.body.scrollTop > 920 || document.documentElement.scrollTop > 920) {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
             //            grabs a class type selector and adds it to the Id
-            document.getElementById("navv").className = "fixedNav";
+            nav.className = "fixedNav";
+            
 
         } else {
-            document.getElementById("navv").className = "";
-
+            nav.className = "";
+             
         }
     } 
     // slide names for images
@@ -21,12 +25,7 @@ function index() {
         if (document.body.scrollTop > 980 || document.documentElement.scrollTop > 980) {
             slide.className = "slide";
             slide.style.opacity = 1;
-        } else {
-            slide.className = "slideback";
-            slide.style.opacity = 0;
-
-
-        }
+        } 
     }
     window.addEventListener("scroll", slide1);
 
@@ -68,6 +67,11 @@ function index() {
     }
     window.addEventListener("scroll", slide4);
     window.addEventListener("scroll", fixed);
+     function submition(){
+        document.forms["formSub"].action = 'submit.php';
+        document.forms["formSub"].submit();
+     }
+    
 // display functions
 //    function display() {
 //        document.getElementById("li").hidden = true;

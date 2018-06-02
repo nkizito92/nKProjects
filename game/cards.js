@@ -1,5 +1,5 @@
-var val = ["AA", "D", "C", "O_O", "D", "C", "O_O", "AA"];
 
+var val = ["AA", "D", "C", "O_O", "D", "C", "O_O", "AA"];
 var values = [];
 var flipped = 0;
 var flip = [];
