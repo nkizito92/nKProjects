@@ -4,7 +4,10 @@ function index() {
             window.location.replace("MobilePort/index.html");
         }
 var nav =  document.getElementById("navv");
-    function fixed() {
+var nav2 = document.getElementById("nav2");
+
+    
+ function fixed() {
         if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
             //            grabs a class type selector and adds it to the Id
             nav.className = "fixedNav";
@@ -12,6 +15,16 @@ var nav =  document.getElementById("navv");
 
         } else {
             nav.className = "";
+             
+        }
+        
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            //            grabs a class type selector and adds it to the Id
+            nav2.className = "fixedNav";
+            
+
+        } else {
+            nav2.className = "";
              
         }
     } 

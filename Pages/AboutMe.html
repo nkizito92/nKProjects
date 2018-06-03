@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <nav id="navv">
+    <nav id="nav2">
         <!--my navigation bar -->
         <ul>
             <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
             <li> <a href="../index.html">Home</a></li>
-            <li> <a href="AboutMe.html">About Me</a></li>
+            <li> <a href="AboutMe.html" style="text-decoration: underline">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
             <li> <a href="Contact.html">Contact</a></li>
             <li> <a href="../game/matchCards.html">Applications</a></li>
@@ -43,12 +43,12 @@
         <br>
 
         <section>
-            <p>Want to laugh?! In high school I used to make animes with Adobe Flash CS3 <span> <img src="../Pics/Flash.JPG" width="40px"> </span> and I upload a few on my YouTube account. Here is one of my videos</p>
+            <p>Want to laugh?! In high school I used to make animes with Adobe Flash CS3 <span> <img src="../Pics/Flash.JPG" width="20px"> </span> and I upload a few on my YouTube account. Here is one of my videos</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Bjr88ktvbsg" frameborder="0" allowfullscreen></iframe>
         </section>
         
     </main>
-            <footer align="center">
+            <footer>
         
                     <ul>
                         <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
@@ -64,8 +64,20 @@
             <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
 
             <script>
-                index();
-            </script>
+                var nav2 = document.getElementById("nav2");
+                 function  fixed() {
+ if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            //            grabs a class type selector and adds it to the Id
+            nav2.className = "fixedNav";
+            
+
+        } else  {
+            nav2.className = "";
+             
+        }
+                 }
+                window.addEventListener("scroll", fixed);
+                </script>
         </footer>
     
 </body>

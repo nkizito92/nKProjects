@@ -8,22 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="../JS/index.js"></script>
 </head>
 
 <body>
-    <nav id="navv">
+    <nav id="nav2">
         <!--my navigation bar -->
         <ul>
             <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
-            <li> <a href="Interest.html">Interest</a></li>
+            <li> <a href="Interest.html" style="text-decoration: underline">Interest</a></li>
             <li> <a href="Contact.html">Contact</a></li>
             <li> <a href="../game/matchCards.html">Applications</a></li>
         </ul>
 
     </nav>
-    <main>
+    <main style="font-size: 16pt;">
         <p>Unfortunately, some people have been paralyzed. Technology has been evolving for some time, but there is very little that could help. A tool that can aid this medical issue is Virtual Reality (VR). With this technology people can experience physical activity, an anime world, a video game, and so much more. Since VR has been created it has done many things. People can watch videos with 360 vision, others get to experience many states or other countries without leaving their living room, and most importantly the paralyzed can learn how to walk again using VR.</p>
         <br>
         <p>Here is an article about it for more information. <a href="https://www.spinalcord.com/blog/virtual-reality-helping-paraplegics-learn-to-walk-again" target="_blank" class="clickMes">Chick Me!!</a></p>
@@ -40,7 +41,7 @@
             <a href="../game/matchCards.html" class="links" target="_blank">Click me!!</a></p>
         <img src="../Pics/app.JPG" width="200px">
     </main>
-       <footer align="center">
+       <footer>
         <ul>
             <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </li>
@@ -55,9 +56,21 @@
 
         <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
 
-        <script>
-            index();
-        </script>
+                 <script>
+                var nav2 = document.getElementById("nav2");
+                 function  fixed() {
+ if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            //            grabs a class type selector and adds it to the Id
+            nav2.className = "fixedNav";
+            
+
+        } else {
+            nav2.className = "";
+             
+        }
+                 }
+                window.addEventListener("scroll", fixed);
+                </script>
     </footer>
 </body>
 
