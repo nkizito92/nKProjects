@@ -1,7 +1,26 @@
 * {
-    margin: 0px;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb { 
+    background-color: #404040;
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+     
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: white;
+     
+}
+::-webkit-scrollbar-track {
+    background-color: #a0a0a0;
 }
 
 #immg {
@@ -40,27 +59,6 @@ button {
     padding: 20px;
 }
 
-.fixedNav {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: 0px;
-    text-align: center;
-    z-index: 8;
-    width: 100%;
-    margin: auto;
-    background-color: black;
-    transition: 1s ;
-    animation: fadein .5s normal;
-    background-color: rgba(0, 0, 0, .2);
-}
-@keyframes fadein{
-    0%{top: -100px;}
-    100%{top: 0px;}
-}
-
 section[id="pos"] h1{
     text-decoration: none;
 }
@@ -79,9 +77,29 @@ main {
 
 body {
     position: relative;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(193, 193, 206);
     margin: auto;
 
+}
+.fixedNav {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    z-index: 8;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(0, 0, 80); 
+    transition: 1s ;
+    animation: fadein .5s normal;
+    background-color: rgba(0, 0, 80, .2);
+}
+@keyframes fadein{
+    0%{top: -100px;}
+    100%{top: 0px;}
 }
 
 nav {
@@ -91,7 +109,7 @@ nav {
     padding-bottom: 23px;
     margin: auto;
     width: 100%;
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 80); 
 }
 
 nav li{
@@ -222,7 +240,6 @@ nav a:active {
     transition: 0s;
 }
 
-#evens {}
 
 #img1 {
     opacity: 0;
@@ -280,7 +297,7 @@ nav a:active {
 
 header {
     position: relative;
-    background-color: #303030;
+    background-color: rgb(0, 0, 56);
     margin: auto;
     width: 700px;
     padding-left: 200px;
