@@ -13,13 +13,19 @@
 
 <body class="Contactbground" >
     <img id="backgroundImg" src="../Pics/DragonWarriors.jpg">
-    <nav id="navv">
+   <nav>
         <!--my navigation bar -->
-        <a href="../index.html" class="links">Home</a>
-        <a href="AboutMe.html" class="links">About Me</a>
-        <a href="Interest.html" class="links">Interest</a>
-        <a href="../game/matchCards.html" class="links">Applications</a>
+        <ul>
+            <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="AboutMe.html">About Me</a></li>
+            <li> <a href="Interest.html">Interest</a></li>
+            <li> <a href="Contact.html" style="text-decoration: underline">Contact</a></li>
+            <li> <a href="../game/matchCards.html">Applications</a></li>
+        </ul>
+
     </nav>
+    
   <?php include('ContactformProcess.php'); ?>  
     <form name="formSub" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
         <legend  align="center">CONTACT ME</legend>
@@ -30,18 +36,21 @@
         <textarea name="message" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft" ></textarea>
         <input id="submit" type="submit" value="Send Message">
     </form>
-     <footer align="center">
-            <section>
-                <section id="li">
-                    <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                    <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                </section>
-            </section>
-         <script>index();</script>
-            
-            <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
+      <footer>
+        <ul>
+            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+            </li>
+            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+
+
+        <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
+
     </footer>
 </body>
 

@@ -14,6 +14,7 @@
         colorDisp.textContent = rgbPicker;
         h1.style.backgroundColor = "";
         reset.textContent = "New game!!";
+        messageDisp.textContent = "";
         for(var i = 0; i < squares.length; i++){
             squares[i].style.backgroundColor = colors[i];
         }
@@ -33,6 +34,7 @@
                 h1.style.backgroundColor = clickColor;
                 reset.textContent = "Play Again?!";
             } else {
+            
                 this.style.backgroundColor = "gray";
                 messageDisp.textContent = "Try Again!!";
             }
