@@ -71,3 +71,7 @@ button:hover {
 
 }
 
+
+#minutes {
+    display: inline-block;
+}
