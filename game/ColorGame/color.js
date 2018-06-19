@@ -1,7 +1,7 @@
-    var colors = generateRandomColors(6);
+    var colors = [];
     var numSquares = 6;
+    var rgbPicked;
     var squares = document.querySelectorAll(".square");
-    var rgbPicked = pickColor();
     var colorDisp = document.getElementById("colorDisplay");
     var messageDisp = document.querySelector("#message");
     var reset = document.querySelector("#reset");
@@ -9,16 +9,46 @@
     colorDisp.textContent = rgbPicked;
     var modeBtns = document.querySelectorAll(".mode");
 
+    starting();
 
-    for (var i = 0; i < modeBtns.length; i++) {
-        modeBtns[i].addEventListener("click", function () {
-            modeBtns[0].classList.remove("selected");
-            modeBtns[1].classList.remove("selected");
-            this.classList.add("selected");
-            this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-            resetGame();
+    function starting() {
+        setModebtn();
+        setSquares();
+        resetGame();
+    }
 
-        });
+    function setModebtn() {
+        for (var i = 0; i < modeBtns.length; i++) {
+            modeBtns[i].addEventListener("click", function () {
+                modeBtns[0].classList.remove("selected");
+                modeBtns[1].classList.remove("selected");
+                this.classList.add("selected");
+                this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+                resetGame();
+
+            });
+        }
+    }
+
+    function setSquares() {
+        for (var i = 0; i < squares.length; i++) {
+
+            squares[i].addEventListener("click", function () {
+                var clickColor = this.style.backgroundColor;
+
+                if (clickColor === rgbPicked) {
+                    messageDisp.textContent = "CORRECT!!";
+                    changeColors(rgbPicked);
+                    h1.style.backgroundColor = clickColor;
+                    reset.textContent = "Play Again?!";
+                } else {
+
+                    this.style.backgroundColor = "black";
+                    messageDisp.textContent = "Try Again!!";
+                }
+            });
+
+        }
     }
 
     function resetGame() {
@@ -39,27 +69,6 @@
 
     }
     reset.addEventListener("click", resetGame);
-
-
-    for (var i = 0; i < squares.length; i++) {
-        squares[i].style.backgroundColor = colors[i];
-
-        squares[i].addEventListener("click", function () {
-            var clickColor = this.style.backgroundColor;
-
-            if (clickColor === rgbPicked) {
-                messageDisp.textContent = "CORRECT!!";
-                changeColors(rgbPicked);
-                h1.style.backgroundColor = clickColor;
-                reset.textContent = "Play Again?!";
-            } else {
-
-                this.style.backgroundColor = "black";
-                messageDisp.textContent = "Try Again!!";
-            }
-        });
-
-    }
 
     function changeColors(color) {
         for (var i = 0; i < squares.length; i++) {
