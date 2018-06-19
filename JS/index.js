@@ -5,8 +5,7 @@ function index() {
     }
     var nav = document.querySelector("nav");
     var nav2 = document.querySelector("#nav2");
-
-
+    
     function fixed() {
 
         if (nav2!= true) {

@@ -1,79 +1,97 @@
     var colors = generateRandomColors(6);
-
+    var numSquares = 6;
     var squares = document.querySelectorAll(".square");
-    var rgbPicker = pickColor();
+    var rgbPicked = pickColor();
     var colorDisp = document.getElementById("colorDisplay");
     var messageDisp = document.querySelector("#message");
     var reset = document.querySelector("#reset");
     var h1 = document.querySelector("h1");
-    colorDisp.textContent = rgbPicker;
+    colorDisp.textContent = rgbPicked;
+    var modeBtns = document.querySelectorAll(".mode");
 
-    reset.addEventListener("click", function(){
-        colors = generateRandomColors(6);
-        rgbPicker = pickColor();
-        colorDisp.textContent = rgbPicker;
+
+    for (var i = 0; i < modeBtns.length; i++) {
+        modeBtns[i].addEventListener("click", function () {
+            modeBtns[0].classList.remove("selected");
+            modeBtns[1].classList.remove("selected");
+            this.classList.add("selected");
+            this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+            resetGame();
+
+        });
+    }
+
+    function resetGame() {
+        colors = generateRandomColors(numSquares);
+        rgbPicked = pickColor();
+        colorDisp.textContent = rgbPicked;
         h1.style.backgroundColor = "";
         reset.textContent = "New game!!";
         messageDisp.textContent = "";
-        for(var i = 0; i < squares.length; i++){
-            squares[i].style.backgroundColor = colors[i];
+        for (var i = 0; i < squares.length; i++) {
+            if (colors[i]) {
+                squares[i].style.display = "block";
+                squares[i].style.backgroundColor = colors[i];
+            } else {
+                squares[i].style.display = "none";
+            }
         }
-        
-    });
-    
-  
+
+    }
+    reset.addEventListener("click", resetGame);
+
+
     for (var i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = colors[i];
 
         squares[i].addEventListener("click", function () {
             var clickColor = this.style.backgroundColor;
-            
-            if (clickColor === rgbPicker) {
+
+            if (clickColor === rgbPicked) {
                 messageDisp.textContent = "CORRECT!!";
-                changeColors(rgbPicker);
+                changeColors(rgbPicked);
                 h1.style.backgroundColor = clickColor;
                 reset.textContent = "Play Again?!";
             } else {
-            
-                this.style.backgroundColor = "gray";
+
+                this.style.backgroundColor = "black";
                 messageDisp.textContent = "Try Again!!";
             }
         });
 
     }
-function changeColors(color){
-        for(var i = 0; i < squares.length; i++){
+
+    function changeColors(color) {
+        for (var i = 0; i < squares.length; i++) {
             squares[i].style.backgroundColor = color;
-            }
+        }
     }
 
-function pickColor() {
-var random = Math.floor(Math.random() * colors.length);
-    return colors[random];
-}
-
-function generateRandomColors (num) {
-    //make array 
-    var arr = [];
-    //add num color to array
-    for(var i = 0; i < num; i++){
-        arr.push(randomColor());
+    function pickColor() {
+        var random = Math.floor(Math.random() * colors.length);
+        return colors[random];
     }
-    // return same arr
-    
-    return arr;
 
-}
+    function generateRandomColors(num) {
+        //make array 
+        var arr = [];
+        //add num color to array
+        for (var i = 0; i < num; i++) {
+            arr.push(randomColor());
+        }
+        // return same arr
 
-function randomColor () {
-    // random color for red
-   var r = Math.floor(Math.random()* 256);
-    // random color for green
-   var g =  Math.floor(Math.random()* 256);
-    // random color for blue
-   var b = Math.floor(Math.random()* 256);
-    
-    return "rgb(" + r + ", " + g + ", " + b + ")";
-}
+        return arr;
 
+    }
 
+    function randomColor() {
+        // random color for red
+        var r = Math.floor(Math.random() * 256);
+        // random color for green
+        var g = Math.floor(Math.random() * 256);
+        // random color for blue
+        var b = Math.floor(Math.random() * 256);
+
+        return "rgb(" + r + ", " + g + ", " + b + ")";
+    }
