@@ -8,15 +8,17 @@
     var h1 = document.querySelector("h1");
     var modeBtns = document.querySelectorAll(".mode");
     var sec = 0;
+    var minutes = document.getElementById("minutes");
+    var seconds =  document.getElementById("seconds");
     // set timer  
     function pad(val) {
         return val > 9 ? val : "0" + val;
     }
-    var timer = setInterval(startTimer, 1000);
+    var timer = setInterval( startTimer, 1000);
 
-    function startTimer() {
-        document.getElementById("seconds").innerHTML = ":" + pad(++sec % 60);
-        document.getElementById("minutes").innerHTML = pad(parseInt(sec / 60, 10));
+   function startTimer() {
+       seconds.innerHTML = ":" + pad(++sec % 60);
+        minutes.innerHTML = pad(parseInt(sec / 60, 10));
     }
     starting();
 
@@ -48,7 +50,6 @@
 
                 if (clickColor === rgbPicked) {
                     messageDisp.textContent = "CORRECT!!";
-                    clearInterval(timer);
                     changeColors(rgbPicked);
                     h1.style.backgroundColor = clickColor;
                     reset.textContent = "Play Again?!";

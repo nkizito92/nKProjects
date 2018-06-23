@@ -1,51 +1,63 @@
 * {
-    margin: 0px;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
 
-#immg {
-    width: 360px;
-    margin: auto;
+::-webkit-scrollbar{
+    min-width: 10px;
+}
+
+::-webkit-scrollbar-thumb { 
+    background-color: #404040;
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+     
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: white;
+     
+}
+::-webkit-scrollbar-track {
+    background-color: #a0a0a0;
+    border-radius: 5px
 }
 
 button {
     border-radius: 5px;
     border: none;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 7px;
 }
 
 /*here is where I change the background color of section*/
 
-#pos {
+#pos { 
     position: relative;
     margin: auto;
-    width: 360px;
+    max-width: 360px;
+    height: 280px;
     z-index: 0;
+     background-image: url(../Pics/CodingTree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
 }
-#greetings {
-    position: absolute;
-    font-size: 12pt;
-    color: white;
-    width: 150px;
-    bottom: 100px;
-    text-align: center;
-    background-color: rgba(225, 225, 225, 0.3);
-    border-radius: 80px;
-    padding: 20px;
-    left: 80px;
-}
+
 hr {
     width: 30px;
     height: 2px;
     background-color: grey;
     margin-bottom: 5px;
-   border-width: 0px;
+    border-width: 0px;
 } 
 
 #item{
+    position: relative;
+    display: block;
+    right: 45%;
     width: 30px;
     color: white;
 }
@@ -62,6 +74,10 @@ hr {
 }
 .fixedNav {
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
     top: 0;
     z-index: 8;
     width: 100%;
@@ -76,32 +92,28 @@ hr {
 .underline {
     text-decoration: underline;
 }
-.bground {
+main {
     position: relative;
     background-color: rgb(108, 108, 108);
     margin: auto;
     width: 320px;
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px ;
 }
-
-.background {
+body {
     position: relative;
-    background-color: rgb(179, 179, 179);
-    margin: auto;
-
+    background-color: rgb(193, 193, 206);
+    margin:0 auto;
+    max-width: 360px;
 }
 
 nav {
     
     position: relative;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: auto;
+    padding: 10px 20px;
+    margin: 0 auto;
     width: 320px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 80);
 }
 
 .apnav {
@@ -116,64 +128,40 @@ nav {
 }
 
 .clickMes {
-    color: black;
-    font-size: 14pt;
+    display: inline-block;
+    padding: 3px;
+    background-color: rgb(0, 0, 80);
+    color: white;
+    font-size: 15pt;
     text-decoration: none;
     font-weight: 600;
-}
+    border-radius: 6px;
+} 
 
 .clickMes:active {
     color: cyan;
 }
 
 .clickMes:hover {
-    animation: clickmes 1.3s infinite;
+   background-color: rgb(0, 0, 160);
 }
 
-@keyframes clickmes {
-    0% {
-        background-color: none;
-    }
-    50% {
-        background-color: cyan;
-    }
-    100% {
-        background-color: none;
-    }
-}
-
-.clickMes2{
-    color: white;
-    font-size: 17pt;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.clickMes2:active {
-    color: cyan;
-}
-
-.clickMes2:hover {
-    animation: clickmes 1.3s infinite;
-}
-
-.links {
+nav a{
     color: #FAFAFA;
-    font-weight: bold;
     font-size: 18pt;
     text-decoration: none;
-    text-shadow: 2px 2px rgba(1, 231, 255, 0.40);
     margin: 10px;
 }
-
-.links:hover {
-    transition: 0.2s;
-    background-color: rgb(0, 218, 245);
-    padding: 1px;
+nav li{
+    display: block;
+    text-decoration: none;
 }
 
-.links:active {
-    color: rgb(249, 209, 24);
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
     background-color: #5E5E5E;
     transition: 0s;
 }
@@ -232,27 +220,27 @@ nav {
 
 header {
     position: relative;
-    background-color: #303030;
+    background-color:rgb(0, 0, 56);
     margin: auto;
     width: 320px;
 }
 
-
-.h1 {
-    position: relative;
-    left: 140px;
-}
 
 footer {
     position: relative;
     background-color: #303030;
     margin: auto;
     font-size: 12pt;
+    text-align: center;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 footer li {
-    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+     
 }
 
 #read {
@@ -268,17 +256,11 @@ footer li {
 }
 
 #facebook {
-    position: absolute;
-    margin: 0;
     color: #4267b2;
-    left: 70px;
 }
 
 
 #youtube {
-    position: absolute;
-    margin: 0;
-    left: 40px;
     color: red;
 
 }
@@ -299,8 +281,6 @@ small {
 }
 
 #linkedIn {
-    position: relative;
-    left: 70px;
     color: #028181;
 }
 
@@ -309,9 +289,7 @@ small {
 }
 
 #github {
-    position: relative;
     color: purple;
-    left: 69px;
 }
 
 #github:active {
@@ -320,25 +298,39 @@ small {
 
 
 /* About me */
-.nav {
-    width: 320px;
-}
 #oneLine {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    padding-left: 30px;
-    padding-right: 30px;
-    
+   padding: 90px 20px;
     color: white;
 }
 
 #me {
     position: absolute;
-    left: -10px;
+    left: 10px;
     top: 60px;
     opacity: 1;
     animation: cc 1s normal;
     width: 140px;
+}
+
+.h1 {
+    position: relative;
+    display: block;
+    width: 180px;
+    left: 80px;
+}
+
+.h1 h2 { 
+    display: block;
+}
+.h1 h3 { 
+    display: block;
+}
+.h1 a {
+    color: white;
+    text-decoration: none;
+}
+.h1 a:hover {
+    background-color: gray;
 }
 
 @keyframes cc {
@@ -397,18 +389,6 @@ small {
 
 }
 
-.ibground {
-    position: relative;
-    background-color: rgba(108, 108, 108, 0.4);
-    margin: auto;
-    width: 320px;
-    height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    font-size: 12pt;
-}
-
 /*Hobbies  */
 
 /*Contacts  */
@@ -427,8 +407,7 @@ form {
     position: relative;
     margin: auto;
     width: 320px;
-    background-color: rgba(76, 172, 195, 0.46);
-    left: 37px;
+    background-color: rgba(200, 200, 208, 0.26);
 }
 
 @keyframes open {
@@ -469,23 +448,14 @@ input {
     position: relative;
     width: auto;
     color: white;
-    background-color: darkcyan;
+    background-color: darkblue;
+    outline: none;
     font-size: 16pt;
     padding: 5px;
     border-radius: 8px;
 }
 
-.Contactbground {
 
-    position: relative;
-    /*    background-image: url(../Pics/DragonWarriors.jpg);*/
-    background-position: center;
-    background-color: black;
-    margin: auto;
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 #backgroundImg {
     position: fixed;
@@ -495,22 +465,6 @@ input {
     left: 0;
     top: -250px;
 }
-.foot {
-    position: relative;
-    width:360px;
-    left: 18px;
-}
-.Abackground {
-    position: relative;
-    background-color: rgb(179, 179, 179);
-    margin: auto;
-    width:720px;
-}
 
-#centerB {
-    position: relative;
-    width: 400px;
-    margin: auto;
-}
 
 

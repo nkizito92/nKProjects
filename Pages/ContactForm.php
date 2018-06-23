@@ -21,7 +21,7 @@
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
             <li> <a href="Contact.html" style="text-decoration: underline">Contact</a></li>
-            <li> <a href="../game/matchCards.html">Applications</a></li>
+            <li> <a href="Applications.html">Applications</a></li>
         </ul>
 
     </nav>

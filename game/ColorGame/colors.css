@@ -17,6 +17,15 @@ h1 {
     line-height: 1.1;
     background-color: steelblue;
 }
+.backaPage{
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.backaPage:active{
+    background-color: gray;
+}
 #colorDisplay {
     font-size: 200%;
 }

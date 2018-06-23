@@ -4,32 +4,11 @@ function index() {
         window.location.replace("MobilePort/index.html");
     }
     var nav = document.querySelector("nav");
-    var nav2 = document.querySelector("#nav2");
-    
+    var sticky = nav.offsetTop;
+
     function fixed() {
 
-        if (nav2!= true) {
-            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-                //            grabs a class type selector and adds it to the Id
-                nav.className = "fixedNav";
-
-
-            } else {
-                nav.className = "";
-
-            }
-        } else {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                //            grabs a class type selector and adds it to the Id
-                nav2.className = "fixedNav";
-
-
-            } else {
-                nav2.className = "";
-
-            }
-        }
-
+            window.pageYOffset >= sticky ? nav.className = "fixedNav" : nav.className = "";
     }
     // slide names for images
     var slide = document.getElementById("img1");

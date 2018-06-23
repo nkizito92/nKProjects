@@ -56,21 +56,16 @@
 
         <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
 
-                 <script>
-                var nav2 = document.getElementById("nav2");
-                 function  fixed() {
- if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            //            grabs a class type selector and adds it to the Id
-            nav2.className = "fixedNav";
-            
-
-        } else {
-            nav2.className = "";
-             
-        }
-                 }
-                window.addEventListener("scroll", fixed);
-                </script>
+        <script>
+            var nav2 = document.getElementById("nav2");
+            var sticky = nav2.offsetTop;
+            // grabs a class type selector and adds it to the Id
+            function fixed() {
+                window.pageYOffset > sticky ? nav2.classList.add("fixedNav") : nav2.classList.remove("fixedNav");
+            }
+            window.addEventListener("scroll", fixed);
+        </script>
+                
     </footer>
 </body>
 

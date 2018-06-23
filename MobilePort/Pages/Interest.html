@@ -4,27 +4,24 @@
 <head>
     <title>Interest!!</title>
     <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="shortcut icon" href="../Pics/PsVr.JPG">
+    <link rel="shortcut icon" href="../Pics/mylogo3.png">
     <script src="https://use.fontawesome.com/7f1d03a375.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="../JS/index.js"></script>
 </head>
 
-<body id="iback">
-    <nav id="navv" class="nav">
+<body>
+    <nav class="fixedNav">
         <!--my navigation bar -->
-        <section id="item">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-        </section>
-        <section id="subitem"><a href="../index.html" class="links">Home</a>
-            <a href="../Pages/AboutMe.html" class="links">About Me</a>
-            <a href="../Pages/Contact.html" class="links">Contact</a>
-            <a href="../game/matchCards.html" class="links">Applications</a></section>
+        <section id="item"><hr><hr><hr><hr></section>
+        <ul id="subitem">
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="AboutMe.html">About Me</a></li>
+            <li> <a href="Interest.html" style="text-decoration: underline">Interest</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+            <li> <a href="../game/matchCards.html">Applications</a></li>
+        </ul>
     </nav>
-    <main class="ibground">
+    <main>
         <p>Unfortunately, some people have been paralyzed. Technology has been evolving for some time, but there is very little that could help. A tool that can aid this medical issue is Virtual Reality (VR). With this technology people can experience physical activity, an anime world, a video game, and so much more. Since VR has been created it has done many things. People can watch videos with 360 vision, others get to experience many states or other countries without leaving their living room, and most importantly the paralyzed can learn how to walk again using VR.</p>
         <br>
         <p>Here is an article about it for more information. <a href="https://www.spinalcord.com/blog/virtual-reality-helping-paraplegics-learn-to-walk-again" target="_blank" class="clickMes">Chick Me!!</a></p>
@@ -40,24 +37,27 @@
             <br> Here is a game I created using JavaScript and CSS.
             <a href="../game/matchCards.html" class="clickMes" target="_blank">Click me!!</a></p>
         <img src="../Pics/app.JPG" width="200px">
-        <footer align="center">
-            <section>
-                <section id="li">
-                    <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                    <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                </section>
-            </section>
-
+      <footer>
+            <ul>
+            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+            </li>
+            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
             <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
 
-            <script>
-                index();
-
-            </script>
         </footer>
     </main>
+        
+    <script>$("#item").click(function () {
+        $("#subitem").slideToggle(500);
+    });
+        
+     </script>
 </body>
 
 </html>

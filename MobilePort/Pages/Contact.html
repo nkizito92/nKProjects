@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/b563a0f3f3.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
 </head>
 
-<body class="Contactbground" >
-    <img id="backgroundImg" src="../Pics/DragonWarriors.jpg">
-     <nav id="navv" class="nav">
+<body>
+    <img id="backgroundImg" src="../Pics/darkCloud.jpg">
+     <nav class="fixedNav">
         <!--my navigation bar -->
-        <section id="item">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-        </section>
-        <section id="subitem"><a href="../index.html" class="links">Home</a>
-            <a href="../Pages/Interest.html" class="links">Interest</a>
-            <a href="../Pages/AboutMe.html" class="links">Contact</a>
-            <a href="../game/matchCards.html" class="links">Applications</a></section>
+        <section id="item"><hr><hr><hr><hr></section>
+        <ul id="subitem">
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="AboutMe.html">About Me</a></li>
+            <li> <a href="Interest.html">Interest</a></li>
+            <li> <a href="Contact.html" style="text-decoration: underline">Contact</a></li>
+            <li> <a href="../game/matchCards.html">Applications</a></li>
+        </ul>
     </nav>
     
     <form>
@@ -35,21 +34,27 @@
         <textarea name="YourText" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft" ></textarea>
         <input id="submit" type="submit" value="Send Message">
     </form>
-     <footer class="foot" align="center">
-            <section>
-                <section id="li">
-                    <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                    <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                    <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                </section>
-            </section>
-
+      <footer>
+            <ul>
+            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+            </li>
+            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
             <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
-    </footer>
-       <script src="../JS/index.js"></script>
+
+        </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script> index ();</script>
+     <script>$("#item").click(function () {
+        $("#subitem").slideToggle(500);
+    });
+        
+     </script>
 </body>
 
 </html>

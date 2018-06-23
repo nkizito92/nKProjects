@@ -39,7 +39,7 @@ main {
 }
 
 .firecrack {
-    background: url(../Pics/fireworks.gif) 810px 400px !important;
+    background: url(../../Pics/fireworks.gif) 810px 400px !important;
    
 }
 div#cards {
@@ -54,7 +54,7 @@ div#cards > div {
     border: 1px black solid;
     height:180px;
     width:180px;
-    background: url('../Pics/fire.jpg') no-repeat;
+    background: url('../../Pics/fire.jpg') no-repeat;
     background-size: 180px 180px;
     margin: 10px;
     float: left;

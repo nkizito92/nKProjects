@@ -1,41 +1,38 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <head>
     <link rel="shortcut icon" href="../Pics/mylogo3.png">
+    <link rel="stylesheet" href="../CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/b563a0f3f3.js"></script>
 </head>
 
 <body>
-    <img id="backgroundImg" src="../Pics/darkCloud.jpg">
-     <nav>
+    <nav id="nav2">
         <!--my navigation bar -->
+
         <ul>
             <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
-            <li> <a href="Contact.html" style="text-decoration: underline">Contact</a></li>
-            <li> <a href="Applications.html">Applications</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+            <li> <a href="Applications.html" style="text-decoration: underline">Applications</a></li>
         </ul>
 
     </nav>
-    
-    <form action="">
-        <legend  align="center">CONTACT ME</legend>
-        <br>
-       <input name="FullName" type="text" placeholder="FullName">
-       <input name="email" type="email" placeholder="Email">
-        <input name="Subject" type="text" placeholder="Subject">
-        <textarea name="YourText" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft" ></textarea>
-        <input id="submit" type="submit" value="Send Message">
-        <div id="success"></div>
-    </form>
-       <footer>
+    <header id="hea">
+        <h1>Choose a Game</h1>
+    </header>
+    <main>
+        <section id="games">
+        <a href="../game/MatchCards/matchCards.html">MatchingCards<section id="matchingCards"></section></a>
+        <a href="../game/ColorGame/Colors.html">Color Game
+       <section id="colorGame"></section></a></section>
+    </main>
+    <footer>
+
         <ul>
             <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </li>
@@ -47,10 +44,16 @@
             </li>
         </ul>
 
-
         <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
-
     </footer>
+    <script>
+        var nav2 = document.getElementById("nav2");
+        var sticky = nav2.offsetTop;
+        // grabs a class type selector and adds it to the Id
+        function fixed() {
+            window.pageYOffset > sticky ? nav2.classList.add("fixedNav") : nav2.classList.remove("fixedNav");
+        }
+        window.addEventListener("scroll", fixed);
+    </script>
 </body>
-
 </html>

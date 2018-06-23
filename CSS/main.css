@@ -3,23 +3,26 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     min-width: 10px;
 }
 
-::-webkit-scrollbar-thumb { 
+::-webkit-scrollbar-thumb {
     background-color: #404040;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background-color: black;
-     
+
 }
-::-webkit-scrollbar-thumb:active{
+
+::-webkit-scrollbar-thumb:active {
     background-color: white;
-     
+
 }
+
 ::-webkit-scrollbar-track {
     background-color: #a0a0a0;
     border-radius: 5px
@@ -28,9 +31,7 @@
 button {
     border-radius: 5px;
     border: none;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 7px;
 }
 
 /*Giant image section*/
@@ -44,17 +45,20 @@ button {
     background-size: cover;
 }
 
-section[id="pos"] h1{
+section[id="pos"] h1 {
     text-decoration: none;
 }
+
 section h1 {
     text-decoration: underline;
 }
+
 main {
     position: relative;
     background-color: rgb(108, 108, 108);
     margin: auto;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -66,6 +70,7 @@ body {
     margin: auto;
 
 }
+
 .fixedNav {
     position: -webkit-sticky;
     position: -moz-sticky;
@@ -77,14 +82,19 @@ body {
     z-index: 8;
     width: 100%;
     margin: auto;
-    background-color: rgb(0, 0, 80); 
-    transition: 1s ;
+    background-color: rgb(0, 0, 80);
+    transition: 1s;
     animation: fadein .5s normal;
     background-color: rgba(0, 0, 80, .2);
 }
-@keyframes fadein{
-    0%{top: -100px;}
-    100%{top: 0px;}
+
+@keyframes fadein {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0px;
+    }
 }
 
 nav {
@@ -93,29 +103,30 @@ nav {
     padding: 23px 0;
     margin: auto;
     width: 100%;
-    background-color: rgb(0, 0, 80); 
+    background-color: rgb(0, 0, 80);
 }
 
-nav li{
+
+nav li {
     text-align: center;
     display: inline-block;
 }
 
-nav a[title="Home"]{
+nav a[title="Home"] {
     position: relative;
-    right: 200px; 
-    font-family: Vivaldi; 
+    right: 200px;
+    font-family: Vivaldi;
     font-size: 26pt;
     font-weight: normal;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px red,
-                 -1px -1px red,
-                1px -1px red,
-                -1px 1px red;
+    -1px -1px red,
+    1px -1px red,
+    -1px 1px red;
     padding: 10px;
     bottom: 10px;
-} 
+}
 
 nav img {
     position: absolute;
@@ -124,12 +135,13 @@ nav img {
     right: 115px;
 }
 
-nav a[title="Home"]:hover{
+nav a[title="Home"]:hover {
     background: none;
     text-decoration: none;
-} 
-nav a[title="Home"]:active{
-    color: white;  
+}
+
+nav a[title="Home"]:active {
+    color: white;
 }
 
 nav a[title="Home"] span {
@@ -147,7 +159,7 @@ nav a {
     font-weight: bold;
     font-size: 18pt;
     text-decoration: none;
-    
+
 }
 
 nav a:hover {
@@ -156,7 +168,6 @@ nav a:hover {
 
 
 nav a:active {
-    color: rgb(249, 209, 24);
     background-color: #5E5E5E;
     transition: 0s;
 }
@@ -170,14 +181,14 @@ nav a:active {
     text-decoration: none;
     font-weight: 600;
     border-radius: 6px;
-} 
+}
 
 .clickMes:active {
     color: cyan;
 }
 
 .clickMes:hover {
-   background-color: rgb(0, 0, 160);
+    background-color: rgb(0, 0, 160);
 }
 
 #img1 {
@@ -238,9 +249,9 @@ header {
     position: relative;
     background-color: rgb(0, 0, 56);
     margin: auto;
-    width: 700px;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 200px;
 }
 
 header img {
@@ -270,7 +281,7 @@ footer {
 footer li {
     display: inline;
     list-style: none;
-     
+
 }
 
 #read {
@@ -286,17 +297,17 @@ footer li {
 }
 
 #facebook {
-    
+
     margin: 0;
     color: #4267b2;
-    
+
 }
 
 
 #youtube {
-    
+
     margin: 0;
-    
+
     color: red;
 
 }
@@ -324,8 +335,8 @@ small {
     color: white;
 }
 
-#github { 
-    color: purple; 
+#github {
+    color: purple;
 }
 
 #github:active {
@@ -334,19 +345,20 @@ small {
 
 
 /* About me */
+
 #oneLine {
     padding-top: 90px;
     padding-bottom: 90px;
     color: white;
 }
 
-#oneLine a{
+#oneLine a {
     color: white;
     text-decoration: none;
 }
 
-#oneLine a:active{
-    color: yellow;  
+#oneLine a:active {
+    color: yellow;
 }
 
 #me {
@@ -356,7 +368,7 @@ small {
     opacity: 1;
     animation: cc 1s normal;
     width: 150px;
-    
+
 }
 
 @keyframes cc {
@@ -374,7 +386,6 @@ small {
 }
 
 /*Interest  */
-
 
 #ivideo {
     position: relative;
@@ -493,4 +504,40 @@ input {
     left: 170px;
     bottom: -40px;
     z-index: 3;
+}
+
+/*Applications*/
+
+#matchingCards {
+    background-image: url(../Pics/app.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+}
+
+#colorGame {
+    background-image: url(../Pics/colors.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+}
+
+#games {
+    text-align: center;
+    font-size: 16pt;
+    max-width: 400px;
+    width: 100%;
+}
+
+#games a {
+    color: white;
+    text-decoration: none;
+}
+
+#games a:active {
+    background-color: black;
 }
