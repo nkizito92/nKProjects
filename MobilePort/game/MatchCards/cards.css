@@ -1,15 +1,15 @@
 body {
     background-color: black;
+    width: 360px;
+    text-align: center;
+    margin: auto;
 }
 .clickMes {
-    position: absolute;
-    left: 200px ;
-    top: 40px;
     color: white;
     font-size: 13pt;
     text-decoration: none;
     font-weight: 600;
-    padding: 20px;
+    padding: 10px;
 }
 
 .clickMes:active {
@@ -34,16 +34,16 @@ body {
 
 .move {
     position: relative;
-    top: 100px;
+    top: 10px;
 }
 
 .firecrack {
-    background: url(../Pics/fireworks.gif) 810px 400px !important;
+    background: url(../../Pics/fireworks.gif) 810px 400px !important;
    
 }
 div#cards {
     border: 2px black solid;
-    width: 320px;
+    width: 308px;
     height: 155px;
     background: linear-gradient(black, cyan, black);
     margin: auto;
@@ -53,7 +53,7 @@ div#cards > div {
     border: 1px black solid;
     height:55px;
     width:55px;
-    background: url('../Pics/fire.jpg') no-repeat;
+    background: url('../../Pics/fire.jpg') no-repeat;
     background-size: 60px 60px;
     margin: 10px;
     float: left;
@@ -63,10 +63,6 @@ div#cards > div {
     cursor: pointer;
 }
 
-.class {
-    width:500px;
-    height: 400px
-}
 #winner {
     position: relative;
     font-size: 18pt;
@@ -74,7 +70,7 @@ div#cards > div {
     bottom: 100px;
     color: white;
     text-shadow: 3px 3px 5px cyan;
-    width: 380px;
+    width: 310px;
     margin:auto;
 }
 
@@ -85,16 +81,9 @@ div#cards > div {
     
 }
 
-#hh {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-
-}
-
 #textAlign {
     position: relative;
     margin: auto;
-     width: 810px;  
+     width: 310px;  
     text-align: center;
 }

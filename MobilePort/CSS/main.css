@@ -164,6 +164,8 @@ nav a:hover {
 nav a:active {
     background-color: #5E5E5E;
     transition: 0s;
+    -moz-transition: 0s;
+   -webkit-transition: 0s;
 }
 
 #img1 {
@@ -455,7 +457,10 @@ input {
     border-radius: 8px;
 }
 
-
+#submit:active{
+    color: cyan;
+    background-color: rgb(0, 0, 75);
+}
 
 #backgroundImg {
     position: fixed;
@@ -465,6 +470,46 @@ input {
     left: 0;
     top: -250px;
 }
+
+/*Applications*/
+
+#matchingCards {
+    background-image: url(../Pics/app.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 160px;
+}
+
+#colorGame {
+    background-image: url(../Pics/colors.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 210px;
+}
+
+#games {
+    text-align: center;
+    font-size: 16pt;
+    max-width: 400px;
+    width: 100%;
+}
+
+#games a {
+    color: white;
+    text-decoration: none;
+}
+#games a[href"#"]{
+    text-decoration: none;
+}
+
+#games a:active {
+    background-color: black;
+}
+
 
 
 

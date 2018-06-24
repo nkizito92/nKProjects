@@ -5,12 +5,9 @@
     var colorDisp = document.getElementById("colorDisplay");
     var messageDisp = document.querySelector("#message");
     var reset = document.querySelector("#reset");
-    var h1 = document.querySelector("h1");
+    var h1 = document.querySelector("h3");
     var modeBtns = document.querySelectorAll(".mode");
     var sec = 0;
-    var minutes = document.getElementById("minutes");
-    var seconds =  document.getElementById("seconds");
-    
     starting();
 
     function starting() {

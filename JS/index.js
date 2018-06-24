@@ -8,7 +8,7 @@ function index() {
 
     function fixed() {
 
-            window.pageYOffset >= sticky ? nav.className = "fixedNav" : nav.className = "";
+        window.pageYOffset >= sticky ? nav.className = "fixedNav" : nav.className = "";
     }
     // slide names for images
     var slide = document.getElementById("img1");
@@ -22,7 +22,6 @@ function index() {
             slide.style.opacity = 1;
         }
     }
-    window.addEventListener("scroll", slide1);
 
     function slide2() {
         if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
@@ -35,7 +34,6 @@ function index() {
 
         }
     }
-    window.addEventListener("scroll", slide2);
 
     function slide3() {
         if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
@@ -48,7 +46,6 @@ function index() {
 
         }
     }
-    window.addEventListener("scroll", slide3);
 
     function slide4() {
         if (document.body.scrollTop > 2440 || document.documentElement.scrollTop > 2440) {
@@ -61,13 +58,18 @@ function index() {
 
         }
     }
-    window.addEventListener("scroll", slide4);
-    window.addEventListener("scroll", fixed);
+    var movers = [slide1, slide2, slide3, slide4, fixed];
+
+    function sliding_Fixed() {
+        for (var i = 0; i <= movers.length; i++) {
+            window.addEventListener("scroll", movers[i]);
+        }
+    }
+    sliding_Fixed();
 
     function submition() {
         document.forms["formSub"].action = 'submit.php';
         document.forms["formSub"].submit();
     }
-
 
 }

@@ -1,11 +1,11 @@
 function index() {
     "use strict";
-    
+
     $("#item").click(function () {
         $("#subitem").slideToggle(500);
     });
 
-    
+
     // slide names for images
     var slide = document.getElementById("img1");
     var slideB = document.getElementById("img3");
@@ -16,12 +16,7 @@ function index() {
         if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
             slide.className = "slide";
             slide.style.opacity = 1;
-        } else {
-            slide.className = "slideback";
-            slide.style.opacity = 0;
-
-
-        }
+        } 
     }
 
     function slide2() {
@@ -59,6 +54,14 @@ function index() {
 
         }
     }
-    
+    var sliders = [slide1, slide2, slide3, slide4];
+
+    function sliding() {
+        for (var i = 0; i <= sliders.length; i++) {
+            window.addEventListener("scroll", sliders[i]);
+        }
+    }
+
+    sliding();
 
 }

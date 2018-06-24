@@ -1,20 +1,21 @@
 <!Doctype html>
 <html>
-    <head>
+    <head> 
     <title>Applications</title>
     <link rel="shortcut icon" href="../Pics/mylogo3.png">
     <link rel="stylesheet" href="../CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <meta name="viewport" content="initial-scale=1.0">
 </head>
 
 <body>
-    <nav id="nav2">
+     <nav class="fixedNav">
         <!--my navigation bar -->
-
-        <ul>
-            <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
+        <section id="item"><hr><hr><hr><hr></section>
+        <ul id="subitem">
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
@@ -28,12 +29,12 @@
     </header>
     <main>
         <section id="games">
-            <a href="../game/MatchCards/matchCards.html">MatchingCards<section id="matchingCards"></section></a>
-            <a href="../game/ColorGame/Colors.html">Color Game
+        <a href="../game/MatchCards/matchCards.html">MatchingCards<section id="matchingCards"></section></a>
+        <a href="../game/ColorGame/Colors.html">Color Game
        <section id="colorGame"></section></a>
-            <h1><a href="#">More Comming Soon!</a></h1>
+        <h1><a href="#">More Comming Soon!</a></h1>
         </section>
-
+        
     </main>
     <footer>
 
@@ -50,14 +51,11 @@
 
         <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
     </footer>
-    <script>
-        var nav2 = document.getElementById("nav2");
-        var sticky = nav2.offsetTop;
-        // grabs a class type selector and adds it to the Id
-        function fixed() {
-            window.pageYOffset > sticky ? nav2.classList.add("fixedNav") : nav2.classList.remove("fixedNav");
-        }
-        window.addEventListener("scroll", fixed);
-    </script>
+         
+    <script>$("#item").click(function () {
+        $("#subitem").slideToggle(500);
+    });
+        
+     </script>
 </body>
 </html>
