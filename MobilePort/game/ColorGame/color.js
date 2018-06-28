@@ -7,6 +7,7 @@
     var reset = document.querySelector("#reset");
     var h1 = document.querySelector("h3");
     var modeBtns = document.querySelectorAll(".mode");
+    var sounds = document.querySelectorAll("audio");
     var sec = 0;
     starting();
 
@@ -20,6 +21,7 @@
     function setModebtn() {
         for (var i = 0; i < modeBtns.length; i++) {
             modeBtns[i].addEventListener("click", function () {
+                sounds[0].play();
                 modeBtns[0].classList.remove("selected");
                 modeBtns[1].classList.remove("selected");
                 this.classList.add("selected");
@@ -37,6 +39,7 @@
                 var clickColor = this.style.backgroundColor;
 
                 if (clickColor === rgbPicked) {
+                    sounds[1].play();
                     messageDisp.textContent = "CORRECT!!";
                     changeColors(rgbPicked);
                     h1.style.backgroundColor = clickColor;
@@ -54,6 +57,7 @@
     function resetGame() {
         colors = generateRandomColors(numSquares);
         rgbPicked = pickColor();
+        sounds[2].play();
         colorDisp.textContent = rgbPicked;
         h1.style.backgroundColor = "";
         reset.textContent = "New game!!";

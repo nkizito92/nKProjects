@@ -8,9 +8,7 @@
     var h1 = document.querySelector("h1");
     var modeBtns = document.querySelectorAll(".mode");
     var sec = 0;
-    var minutes = document.getElementById("minutes");
-    var seconds =  document.getElementById("seconds");
-    
+    var sounds = document.querySelectorAll("audio");
     starting();
 
     function starting() {
@@ -23,6 +21,7 @@
     function setModebtn() {
         for (var i = 0; i < modeBtns.length; i++) {
             modeBtns[i].addEventListener("click", function () {
+                sounds[0].play();
                 modeBtns[0].classList.remove("selected");
                 modeBtns[1].classList.remove("selected");
                 this.classList.add("selected");
@@ -40,6 +39,7 @@
                 var clickColor = this.style.backgroundColor;
 
                 if (clickColor === rgbPicked) {
+                    sounds[1].play();
                     messageDisp.textContent = "CORRECT!!";
                     changeColors(rgbPicked);
                     h1.style.backgroundColor = clickColor;
@@ -72,6 +72,7 @@
 
     }
     reset.addEventListener("click", resetGame);
+    reset.addEventListener("click", function(){sounds[2].play()});
 
     function changeColors(color) {
         for (var i = 0; i < squares.length; i++) {

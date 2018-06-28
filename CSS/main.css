@@ -537,6 +537,7 @@ input {
     font-size: 16pt;
     max-width: 400px;
     width: 100%;
+    color: white;
 }
 
 #games a {

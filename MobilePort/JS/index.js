@@ -11,7 +11,8 @@ function index() {
     var slideB = document.getElementById("img3");
     var slideC = document.getElementById("img4");
     var slideD = document.getElementById("img5");
-
+    var games = "colorgames";
+    slideC.style.height="104px";
     function slide1() {
         if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
             slide.className = "slide";
@@ -42,9 +43,21 @@ function index() {
 
         }
     }
+    // Changes app images
+     setInterval(function(){
+        switch(games){
+            case 'colorgames': slideC.src = "../Pics/colors.JPG";
+                games = "matchingCards";
+                break;
+            case 'matchingCards': 
+                slideC.src = "../Pics/app.JPG";
+                games = "colorgames";
+                break;
+        }
+    }, 3000);
 
     function slide4() {
-        if (document.body.scrollTop > 1540 || document.documentElement.scrollTop > 1540) {
+        if (document.body.scrollTop > 1580 || document.documentElement.scrollTop > 1580) {
             slideD.className = "slide";
             slideD.style.opacity = 1;
         } else {

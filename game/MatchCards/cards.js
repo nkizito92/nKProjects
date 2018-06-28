@@ -3,6 +3,7 @@ var val = ["AA", "D", "C", "O_O", "D", "C", "O_O", "AA"];
 var values = [];
 var flipped = 0;
 var flip = [];
+var sounds = document.getElementsByTagName("audio");
 Array.prototype.cardsshuffle = function () {
     var i = this.length,
         j, temp;
@@ -71,7 +72,7 @@ function cardflip(card, valu) {
                     card1.innerHTML = "";
                     card2.innerHTML = "";
 
-
+                    sounds[0].play();
                     values = [];
                     flip = [];
                 }

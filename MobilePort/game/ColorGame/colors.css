@@ -19,10 +19,14 @@ h3 {
 }
 .backaPage{
     position: absolute;
+    top: 50px;
     left: 10px;
     text-decoration: none;
     color: white;
     font-size: 10pt;
+}
+.backaPage:hover{
+text-decoration: underline;
 }
 .backaPage:active{
     background-color: gray;

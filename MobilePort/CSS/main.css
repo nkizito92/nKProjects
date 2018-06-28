@@ -496,12 +496,14 @@ input {
     font-size: 16pt;
     max-width: 400px;
     width: 100%;
+    color: white;
 }
 
 #games a {
     color: white;
     text-decoration: none;
 }
+
 #games a[href"#"]{
     text-decoration: none;
 }
