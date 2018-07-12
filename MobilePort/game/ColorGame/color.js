@@ -8,6 +8,8 @@
     var h1 = document.querySelector("h3");
     var modeBtns = document.querySelectorAll(".mode");
     var sounds = document.querySelectorAll("audio");
+    var lives = 0;
+    var liveDisplay = document.querySelector("#live");
     var sec = 0;
     starting();
 
@@ -45,9 +47,18 @@
                     h1.style.backgroundColor = clickColor;
                     reset.textContent = "Play Again?!";
                 } else {
-
+                    lives--;
+                    liveDisplay.innerHTML = lives;
                     this.style.backgroundColor = "black";
                     messageDisp.textContent = "Try Again!!";
+                    //     Chech for lives left 
+                    if (lives <= 0) {
+                        lives = 1;
+                        sounds[3].play();
+                        messageDisp.textContent = "Game Over!!";
+                        changeColors("black");
+                        
+                    }
                 }
             });
 
@@ -55,9 +66,10 @@
     }
 
     function resetGame() {
+        lives = 3;
+        liveDisplay.innerHTML = lives;
         colors = generateRandomColors(numSquares);
         rgbPicked = pickColor();
-        sounds[2].play();
         colorDisp.textContent = rgbPicked;
         h1.style.backgroundColor = "";
         reset.textContent = "New game!!";
@@ -72,7 +84,12 @@
         }
 
     }
-    reset.addEventListener("click", resetGame);
+
+    reset.addEventListener("click", function () {
+        resetGame();
+        sounds[2].play()
+    });
+
 
     function changeColors(color) {
         for (var i = 0; i < squares.length; i++) {

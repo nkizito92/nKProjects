@@ -33,7 +33,7 @@ function index() {
     }
 
     function slide3() {
-        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+        if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
             slideC.className = "slide";
             slideC.style.opacity = 1;
         } else {
@@ -57,7 +57,7 @@ function index() {
     }, 3000);
 
     function slide4() {
-        if (document.body.scrollTop > 1580 || document.documentElement.scrollTop > 1580) {
+        if (document.body.scrollTop > 1520 || document.documentElement.scrollTop > 1520) {
             slideD.className = "slide";
             slideD.style.opacity = 1;
         } else {

@@ -3,6 +3,7 @@ var val = ["AA", "D", "C", "O_O", "D", "C", "O_O", "AA"];
 var values = [];
 var flipped = 0;
 var flip = [];
+var sounds = document.getElementsByTagName("audio");
 Array.prototype.cardsshuffle = function () {
     var i = this.length,
         j, temp;
@@ -48,6 +49,7 @@ function cardflip(card, valu) {
 
                 if (flipped == val.length) {
                     document.getElementById("winner").innerHTML = "You won the game!!!";
+                    sounds[0].play();
                     document.getElementById("cards").innerHTML = "";
                     var back = "back";
                     if (back === "back") {
@@ -71,7 +73,7 @@ function cardflip(card, valu) {
                     card1.innerHTML = "";
                     card2.innerHTML = "";
 
-
+                    sounds[0].play();
                     values = [];
                     flip = [];
                 }

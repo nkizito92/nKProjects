@@ -17,6 +17,9 @@ h1 {
     line-height: 1.1;
     background-color: steelblue;
 }
+#lives{
+    width: 20%;
+}
 .backaPage{
     position: absolute;
     left: 10px;

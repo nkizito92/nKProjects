@@ -2,6 +2,7 @@ body {
     background-color: black;
     margin: auto;
 }
+
 .clickMes {
     position: relative;
     bottom: 20px;
@@ -11,7 +12,12 @@ body {
     font-weight: 600;
     padding: 20px;
 }
-
+.life {
+    font-size: 16pt;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+}
 .clickMes:active {
     color: cyan;
 }
@@ -39,8 +45,7 @@ main {
 }
 
 .firecrack {
-    background: url(../../Pics/fireworks.gif) 810px 400px !important;
-   
+    background: url(../../Pics/fireworks.gif) 810px 400px !important; 
 }
 div#cards {
     border: 2px black solid;
@@ -75,7 +80,8 @@ div#cards > div {
     bottom: 230px;
     color: white;
     text-shadow: 3px 3px 5px cyan;
-    width: 480px;
+    width: 400px;
+    border-radius: 40px;
     margin:auto;
 }
 
@@ -83,7 +89,17 @@ div#cards > div {
     position: relative;
     margin:auto;
     bottom: 200px;
+    background-color: rgba(0, 0, 255, 0.73);
+    color: white;
+    outline: none;
+    border-radius: 40px;
+    padding: 2px 20px;
+    font-size: 16pt;
     
+}
+#reset:active {
+    background-color: rgba(0, 0, 165, 0.73); 
+    color: cyan;
 }
 
 #hh {

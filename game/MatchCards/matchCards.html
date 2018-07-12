@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="cards.css">
-    <link rel="shortcut icon" href="../Pics/fire.jpg">
+    <link rel="shortcut icon" href="../../Pics/app.JPG">
     <title>
         Matching Cards
     </title>
@@ -14,10 +14,13 @@
 <body>
     <main>
             <a href="javascript:history.back()" class="clickMes">Go Back!!!</a>
+        <div class="life">Lives: <span id="lives">3</span></div>
 
         <div id="cards"> <img src="" alt="">
         </div>
         <audio src="Sounds/Wrong.mp3" preload="auto"></audio>
+        <audio src="Sounds/strike.mp3" preload="auto"></audio>
+        <audio src="Sounds/confetti.mp3" preload="auto"></audio>
         <section id="textAlign">
             <div id="img"></div>
             <div id="winner"> </div>
@@ -26,7 +29,6 @@
 
         <script>
             cards();
-
         </script>
     </main>
 </body>
