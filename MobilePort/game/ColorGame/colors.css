@@ -66,6 +66,19 @@ button:hover {
     color: white;
     background: steelblue;
 }
+#music {
+    position: absolute;
+    height: 20px;
+    top: 80px;
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+}
+#music:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .square{
     background-color: aqua;
     width: 30%;
@@ -76,6 +89,23 @@ button:hover {
     transition: background .6s;
     -webkit-transition: background .6s;
     -moz-transition: background .6s;
+}
+
+.Rightone {
+    position: relative; 
+    width: 50%;
+    padding-bottom: 50%;
+    border-radius: 12%;
+    opacity: 1;
+    animation: blinks .5s normal;  
+}
+
+@keyframes blinks {
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+    
 }
 
 #strip {

@@ -9,7 +9,7 @@ body {
     font-size: 13pt;
     text-decoration: none;
     font-weight: 600;
-    padding: 10px;
+    padding: 3px;
 }
 
 .clickMes:active {
@@ -30,6 +30,13 @@ body {
     100% {
         background-color: none;
     }
+}
+
+.life {
+    font-size: 12pt;
+    color: white;
+    width: 70px;
+    margin: 0 auto;
 }
 
 .move {
@@ -75,10 +82,15 @@ div#cards > div {
 }
 
 #reset {
-    position: relative;
+   position: relative;
     margin:auto;
     bottom: 100px;
-    
+    background-color: rgba(0, 0, 255, 0.73);
+    color: white;
+    outline: none;
+    border-radius: 40px;
+    padding: 2px 20px;
+    font-size: 16pt;
 }
 
 #textAlign {

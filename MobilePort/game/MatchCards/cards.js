@@ -17,27 +17,33 @@ Array.prototype.cardsshuffle = function () {
 }
 
 function cards() {
+    lives = 3;
+    var liveDisplay = document.getElementById("lives");
+    liveDisplay.innerHTML = lives;
     document.getElementById("cards").className = "firecrack".hidden = true;
     var g = document.getElementById("reset").hidden = true;
     flipped = 0;
     var output = "";
     val.cardsshuffle();
     for (var i = 0; i < val.length; i++) {
-        output += '<div id="cards' + i + '"onclick="cardflip(this,\'' + val[i] + '\')"></div>';
+        output +='<div id="cardss'  + i + '"onclick="cardflip(this,\'' + val[i] + '\')"></div>';
     }
     document.getElementById("cards").innerHTML = output;
-        
+
     document.getElementById("winner").innerHTML = "";
-    document.getElementById("reset").removeEventListener("click", cards);
+    document.getElementById("reset").removeEventListener("click", function() {sounds[1].play(); cards();} );
 }
 // try  to make them images instead of letters 
 function cardflip(card, valu) {
+    var liveDisplay = document.getElementById("lives");
     if (card.innerHTML == "" && values.length < 2) {
         card.style.background = 'linear-gradient(20deg, white, black)';
         card.innerHTML = valu;
+        // flips the first card
         if (values.length == 0) {
             values.push(valu);
             flip.push(card.id);
+            // flips the second card
         } else if (values.length == 1) {
             values.push(valu);
             flip.push(card.id);
@@ -46,10 +52,15 @@ function cardflip(card, valu) {
                 flipped += 2;
                 values = [];
                 flip = [];
+                sounds[1].currentTime = 0;
+                sounds[1].play();
+
 
                 if (flipped == val.length) {
+                    sounds[1].pause();
+                    sounds[2].play();
+
                     document.getElementById("winner").innerHTML = "You won the game!!!";
-                    sounds[0].play();
                     document.getElementById("cards").innerHTML = "";
                     var back = "back";
                     if (back === "back") {
@@ -59,10 +70,12 @@ function cardflip(card, valu) {
                         cback.className = "";
                     }
                     var g = document.getElementById("reset").hidden = false;
-                    var goo = document.getElementById("reset").innerHTML = "Reset game";
-                    goo = document.getElementById("reset").addEventListener("click", cards);
+                    var goo = document.getElementById("reset")
+                    goo.innerHTML = "Reset game";
+                    goo.addEventListener("click", function() {sounds[1].play(); cards();});
 
                 }
+                // picking the wrong card
             } else {
                 function flipp2back(card1, card2) {
                     card1 = document.getElementById(flip[0]);
@@ -76,8 +89,17 @@ function cardflip(card, valu) {
                     sounds[0].play();
                     values = [];
                     flip = [];
+                    liveDisplay.textContent = lives;
                 }
                 setTimeout(flipp2back, 700);
+                lives--;
+
+                if (lives <= 0) {
+                    lives = 0;
+                    liveDisplay.textContent = lives;
+                    setTimeout(cards, 701);
+                    
+                }
             }
 
         }

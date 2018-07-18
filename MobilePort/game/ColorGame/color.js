@@ -1,6 +1,7 @@
     var colors = [];
     var numSquares = 6;
     var rgbPicked;
+    var Rightcolor = document.querySelector(".Rightone");
     var squares = document.querySelectorAll(".square");
     var colorDisp = document.getElementById("colorDisplay");
     var messageDisp = document.querySelector("#message");
@@ -8,6 +9,8 @@
     var h1 = document.querySelector("h3");
     var modeBtns = document.querySelectorAll(".mode");
     var sounds = document.querySelectorAll("audio");
+    var music = document.querySelector("#music");
+    var audiosControl = "off";
     var lives = 0;
     var liveDisplay = document.querySelector("#live");
     var sec = 0;
@@ -19,18 +22,32 @@
         resetGame();
     }
 
+ music.addEventListener("click", function(){
+        if(audiosControl === "off"){
+            sounds[4].pause();
+        document.getElementById("musicAudio").innerHTML = "off";
+            audiosControl = "on";
+        }else {
+            sounds[4].currentTime = 0;
+            sounds[4].play();
+        document.getElementById("musicAudio").innerHTML = "on";
+            audiosControl = "off";
+        }
+    });
+
+    function modes() {
+        sounds[0].play();
+        modeBtns[0].classList.remove("selected");
+        modeBtns[1].classList.remove("selected");
+        this.classList.add("selected");
+        this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+        resetGame();
+
+    }
 
     function setModebtn() {
         for (var i = 0; i < modeBtns.length; i++) {
-            modeBtns[i].addEventListener("click", function () {
-                sounds[0].play();
-                modeBtns[0].classList.remove("selected");
-                modeBtns[1].classList.remove("selected");
-                this.classList.add("selected");
-                this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-                resetGame();
-
-            });
+            modeBtns[i].addEventListener("click", modes);
         }
     }
 
@@ -53,11 +70,21 @@
                     messageDisp.textContent = "Try Again!!";
                     //     Chech for lives left 
                     if (lives <= 0) {
+                        reset.removeEventListener("click", resetSound);
+                        for (var i = 0; i < modeBtns.length; i++) {
+                            modeBtns[i].removeEventListener("click", modes);
+                        }
                         lives = 1;
                         sounds[3].play();
                         messageDisp.textContent = "Game Over!!";
-                        changeColors("black");
-                        
+                        setTimeout(function () {
+                            showCorrectColor(rgbPicked);
+                            reset.addEventListener("click", resetSound);
+                            for (var i = 0; i < modeBtns.length; i++) {
+                                modeBtns[i].addEventListener("click", modes);
+                            }
+                        }, 1000);
+                        displayColors("none");
                     }
                 }
             });
@@ -65,7 +92,14 @@
         }
     }
 
+    function displayColors(hid) {
+        for (var i = 0; i < squares.length; i++) {
+            squares[i].style.display = hid;
+        }
+    }
+
     function resetGame() {
+        Rightcolor.classList.remove('Rightone');
         lives = 3;
         liveDisplay.innerHTML = lives;
         colors = generateRandomColors(numSquares);
@@ -76,7 +110,7 @@
         messageDisp.textContent = "";
         for (var i = 0; i < squares.length; i++) {
             if (colors[i]) {
-                squares[i].style.display = "block";
+                displayColors("block");
                 squares[i].style.backgroundColor = colors[i];
             } else {
                 squares[i].style.display = "none";
@@ -85,16 +119,22 @@
 
     }
 
-    reset.addEventListener("click", function () {
+    function resetSound() {
+        sounds[2].play();
         resetGame();
-        sounds[2].play()
-    });
+    }
+    reset.addEventListener("click", resetSound);
 
 
     function changeColors(color) {
         for (var i = 0; i < squares.length; i++) {
             squares[i].style.backgroundColor = color;
         }
+    }
+
+    function showCorrectColor(color2) {
+        Rightcolor.style.backgroundColor = color2;
+        Rightcolor.classList.add('Rightone');
     }
 
     function pickColor() {

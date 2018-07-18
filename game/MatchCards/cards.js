@@ -17,7 +17,7 @@ Array.prototype.cardsshuffle = function () {
 }
 
 function cards() {
-    lives = 4;
+    lives = 3;
     var liveDisplay = document.getElementById("lives");
     liveDisplay.innerHTML = lives;
     document.getElementById("cards").className = "firecrack".hidden = true;

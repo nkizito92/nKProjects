@@ -1,36 +1,41 @@
 <!Doctype html>
 <html>
-    <head><title>Color Game!!</title>
-        <link rel="stylesheet" type="text/css" href="colors.css">
-        <link rel="shortcut icon" href="../../Pics/colors.JPG">
-        </head>
-    <body> 
-        <h1>
-            The awesome <br>
-          <a href="javascript:history.back()" class="backaPage">Go Back!!!</a>  
+    <head>
+    <title>Color Game!!</title>
+    <link rel="stylesheet" type="text/css" href="colors.css">
+    <link rel="shortcut icon" href="../../Pics/colors.JPG">
+</head>
+
+<body>
+    <h1>
+        The awesome <br>
+        <a href="javascript:history.back()" class="backaPage">Go Back!!!</a>
+        <button id="music">music:<span id="musicAudio">on</span></button>
         <span id="colorDisplay">
             RGB 
             
         </span>
-            <br> Color Game
-            <div>Lives: <span id="live">1</span></div>
-        </h1>
-        <div id="strip"> <button id="reset">New Game!!</button><span id="message"></span>
+        <br> Color Game
+        <div>Lives: <span id="live">1</span></div>
+    </h1>
+    <div id="strip"> <button id="reset">New Game!!</button><span id="message"></span>
         <audio src="Sounds/snap.mp3" preload="auto"></audio>
         <audio src="Sounds/Correct.mp3" preload="auto"></audio>
         <audio src="Sounds/flip.mp3" preload="auto"></audio>
         <audio src="Sounds/Error.mp3" preload="auto"></audio>
+        <audio src="Sounds/slowmotionMusic.mp3" autoplay preload="auto" loop></audio>
         <button class="mode">Easy</button>
-        <button  class="mode selected">Hard</button>
-        </div>
-        <main>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </main>
-        <script src="color.js"></script>
-    </body>
+        <button class="mode selected">Hard</button>
+    </div>
+    <main>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="Rightone"></div>
+    </main>
+    <script src="color.js"></script>
+</body>
 </html>
