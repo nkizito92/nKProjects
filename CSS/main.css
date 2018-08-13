@@ -197,6 +197,10 @@ nav a:active {
     opacity: 0;
 }
 
+#img4 {
+    transition: 0.5s ease;
+}
+
 .slide {
     position: relative;
 

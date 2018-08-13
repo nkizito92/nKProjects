@@ -1,13 +1,17 @@
-*{
-    margin:0 auto; 
+* {
+    margin: 0 auto;
     font-family: "Montserrat", "Avenir";
 }
-body{background-color: #0d153a;}
+
+body {
+    background-color: #0d153a;
+}
 
 main {
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     color: white;
@@ -17,39 +21,61 @@ h1 {
     line-height: 1.1;
     background-color: steelblue;
 }
-#lives{
+
+#lives {
     width: 20%;
 }
-.backaPage{
-    position: absolute;
-    left: 10px;
+
+.backApage{
+  position: absolute;
+    width: 10px;
+    left: 20px;
     top: 70px;
+    display: block;
+    overflow: visible;
     text-decoration: none;
     color: white;
 }
-
-.backaPage:hover{
-text-decoration: underline;
+.backaPage {
+    position: absolute;
+    font-size: 40pt;
+    width: 100px;
+    padding: 0 20px;
+    left: 40px;
+    text-decoration: none;
+    color: white;
+    transition: left .1s linear;
+  
 }
-.backaPage:active{
+
+.backaPage:hover { 
+    left: 10px;
+    text-decoration: underline;
+}
+
+.backaPage:active {
     background-color: gray;
 }
+
 #colorDisplay {
     font-size: 200%;
 }
 
 #message {
-    color: black; 
+    color: black;
     display: inline-block;
     width: 20%;
 }
+
 .selected {
     color: white;
     background-color: steelblue;
 }
+
 body div {
     text-align: center;
 }
+
 button {
     border: none;
     font-size: inherit;
@@ -79,11 +105,45 @@ button:hover {
     color: white;
 }
 
-#music:hover{
+#music:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.square{
+
+#creditsMargin {
+    position: absolute;
+    font-size: 10pt;
+    left: 60px;
+    width: 80px;
+    overflow: hidden;
+}
+
+#credits {
+    position: relative;
+    font-size: 10pt;
+    left: 80px;
+    height: 40px;
+    display: inline;
+    white-space: pre;
+    animation: 10s credit infinite linear;
+    text-decoration: none;
+    color: white;
+}
+
+#credits:hover {
+    text-decoration: underline;
+}
+
+@keyframes credit {
+    0% {
+        left: 80px;
+    }
+    100% {
+        left: -280px;
+    }
+}
+
+.square {
     background-color: aqua;
     width: 30%;
     padding-bottom: 30%;
@@ -96,20 +156,28 @@ button:hover {
 }
 
 .Rightone {
-    position: relative; 
+    position: relative;
     width: 50%;
     padding-bottom: 50%;
     border-radius: 12%;
     opacity: 1;
-    animation: blinks .5s normal;  
+    animation: blinks .5s normal;
 }
 
 @keyframes blinks {
-    25% {opacity: 1;}
-    50% {opacity: 0;}
-    75% {opacity: 1;}
-    100% {opacity: 1;}
-    
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+
 }
 
 #strip {

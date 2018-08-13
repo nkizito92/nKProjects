@@ -17,6 +17,26 @@ h3 {
     line-height: 1.1;
     background-color: steelblue;
 }
+.backApage {
+    position: absolute;
+    font-size: 20pt;
+    width: 20px;
+    padding: 0 20px;
+    left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: left .1s linear;
+  
+}
+
+.backApage:hover { 
+    text-decoration: underline;
+}
+
+.backApage:active {
+    background-color: gray;
+}
+
 .backaPage{
     position: absolute;
     top: 50px;
@@ -77,6 +97,33 @@ button:hover {
 #music:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+#creditsMargin{
+    position: absolute;
+    font-size: 10pt;
+    left: 9px;
+    width: 80px;
+    overflow: hidden;
+}
+#credits {
+    position: relative;
+    font-size: 10pt;
+    left: 80px;
+    height: 40px;
+    display: inline;
+    white-space: pre;
+    animation: 10s credit infinite linear;
+    text-decoration: none;
+    color: white;
+}
+#credits:hover{
+text-decoration: underline;
+}
+
+@keyframes credit {
+    0% {left: 80px;}
+    100%{left: -280px;}
 }
 
 .square{

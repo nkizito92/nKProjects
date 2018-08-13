@@ -3,12 +3,11 @@
     <head><title>Color Game!!</title>
         <link rel="stylesheet" type="text/css" href="colors.css">
         <link rel="shortcut icon" href="../../Pics/colors.JPG">
-        <meta name="viewport" content="initial-scale=1.0">
         </head>
     <body> 
         <h3>
             The awesome <br>
-          <a href="javascript:history.back()" class="backaPage">Go Back!</a>  
+          <a href="javascript:history.back()" class="backApage">&#8678;</a>  
             <button class="backaPage" id="music">music:<span id="musicAudio">on</span></button>
         <span id="colorDisplay">
             RGB 
@@ -16,13 +15,14 @@
         </span>
             <br> Color Game
             <div>Lives: <span id="live">3</span></div>
+            <div id="creditsMargin"><a id="credits" title="Music: Slow Motion (Copyright)" href="https://www.bensound.com/royalty-free-music/track/slow-motion" target="_blank">music by Bensound's Royalty!</a></div>
         </h3>
         <div id="strip"> <button id="reset">New Game!!</button><span id="message"></span>
         <audio src="Sounds/snap.mp3" preload="auto"></audio>
         <audio src="Sounds/Correct.mp3" preload="auto"></audio>
         <audio src="Sounds/flip.mp3" preload="auto"></audio>
         <audio src="Sounds/Error.mp3" preload="auto"></audio>
-        <audio src="Sounds/slowmotionMusic.mp3" preload="auto" autoplay loop></audio>
+        <audio src="Sounds/slowmotionMusic.mp3" preload="auto" loop></audio>
            <!-- <button id="music">music:<span id="musicAudio"> on</span></button>-->
         <button class="mode">Easy</button>
         <button  class="mode selected">Hard</button>

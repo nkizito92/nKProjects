@@ -15,22 +15,25 @@
     var liveDisplay = document.querySelector("#live");
     var sec = 0;
     starting();
+    sounds[4].play();
+    sounds[4].volume = 0.5;
 
     function starting() {
         setModebtn();
         setSquares();
         resetGame();
     }
-
- music.addEventListener("click", function(){
-        if(audiosControl === "off"){
+    // music controls 
+    music.addEventListener("click", function () {
+        if (audiosControl === "off") {
             sounds[4].pause();
-        document.getElementById("musicAudio").innerHTML = "off";
+            document.getElementById("musicAudio").innerHTML = "off";
             audiosControl = "on";
-        }else {
+        } else {
             sounds[4].currentTime = 0;
             sounds[4].play();
-        document.getElementById("musicAudio").innerHTML = "on";
+            sounds[4].volume = 0.5;
+            document.getElementById("musicAudio").innerHTML = "on";
             audiosControl = "off";
         }
     });
