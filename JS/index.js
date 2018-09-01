@@ -1,11 +1,19 @@
 function index() {
     "use strict";
+    // removes greeting text
+    setTimeout(function(){
+        var greetings = document.querySelectorAll("#TreeImg div");
+       for(var remove = 0; remove < greetings.length; remove++){
+           greetings[remove].innerHTML= "";
+       } 
+    }, 4000);
     if (screen.width <= 800) {
         window.location.replace("MobilePort/index.html");
     }
     var nav = document.querySelector("nav");
     var sticky = nav.offsetTop;
-    var games = "colorgames";
+    var games = ["url(../Pics/app.JPG)", "url(../Pics/colors.JPG)"];
+    var gameimgs = 0;
     function fixed() {
 
         window.pageYOffset >= sticky ? nav.className = "fixedNav" : nav.className = "";
@@ -48,16 +56,13 @@ function index() {
     }
     // Changes app images 
     setInterval(function(){
-        switch(games){
-            case 'colorgames': slideC.src = "../Pics/colors.JPG";
-                games = "matchingCards";
-                break;
-            case 'matchingCards': 
-                slideC.src = "../Pics/app.JPG";
-                games = "colorgames";
-                break;
+        gameimgs++;
+            if(gameimgs > games.length -1){
+                gameimgs= 0;
+            }
+        slideC.style.backgroundImage = games[gameimgs];
         }
-    }, 3000);
+    , 3000);
     
     function slide4() {
         if (document.body.scrollTop > 2440 || document.documentElement.scrollTop > 2440) {

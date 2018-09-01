@@ -11,7 +11,8 @@ function index() {
     var slideB = document.getElementById("img3");
     var slideC = document.getElementById("img4");
     var slideD = document.getElementById("img5");
-    var games = "colorgames";
+    var games = ["url(../Pics/app.JPG)", "url(../Pics/colors.JPG)"];
+    var gameimgs = 0;
     slideC.style.height="104px";
     function slide1() {
         if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
@@ -27,8 +28,6 @@ function index() {
         } else {
             slideB.className = "slideback";
             slideB.style.opacity = 0;
-
-
         }
     }
 
@@ -45,15 +44,11 @@ function index() {
     }
     // Changes app images
      setInterval(function(){
-        switch(games){
-            case 'colorgames': slideC.src = "../Pics/colors.JPG";
-                games = "matchingCards";
-                break;
-            case 'matchingCards': 
-                slideC.src = "../Pics/app.JPG";
-                games = "colorgames";
-                break;
+         gameimgs++;
+        if (gameimgs > games.length -1){
+            gameimgs = 0;
         }
+         slideC.style.backgroundImage = games[gameimgs];
     }, 3000);
 
     function slide4() {

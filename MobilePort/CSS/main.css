@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb { 
-    background-color: #404040;
+    background-color: rgb(0, 0, 110);
     border-radius: 5px; 
 }
 
@@ -40,7 +40,7 @@ button {
     max-width: 360px;
     height: 280px;
     z-index: 0;
-     background-image: url(../Pics/CodingTree.jpg);
+     background-image: url(../Pics/Coding_Tree.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -81,7 +81,7 @@ hr {
     top: 0;
     z-index: 8;
     width: 100%;
-    margin: auto;
+    margin:0 auto;
     max-width: 320px;
     animation: fadedd 1s infinite;
 }
@@ -114,17 +114,6 @@ nav {
     margin: 0 auto;
     width: 320px;
     background-color: rgb(0, 0, 80);
-}
-
-.apnav {
-    position: relative;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: auto;
-    width: 320px;
-    background-color: rgb(0, 0, 0);
-    
 }
 
 .clickMes {
@@ -171,7 +160,13 @@ nav a:active {
 #img1 {
     opacity: 0;
 }
-
+#img4 {
+    background-image: url(../Pics/app.JPG);
+    background-size: 200px 105px;
+    width: 200px;
+    margin: 0;
+    transition: 1s ease;
+}
 .slide {
     position: relative;
 
@@ -235,8 +230,7 @@ footer {
     font-size: 12pt;
     text-align: center;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 footer li {
@@ -470,7 +464,7 @@ input {
     top: -250px;
 }
 
-/*Applications*/
+/*Portfolio*/
 
 #matchingCards {
     background-image: url(../Pics/app.JPG);
