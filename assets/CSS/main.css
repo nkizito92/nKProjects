@@ -41,12 +41,12 @@ button {
     margin: 0 auto;
     width: 100%;
     height: 1000px;
-    background-image: url(../Pics/Coding_Tree.jpg);
+    background-image: url(../images/Coding_Tree.jpg);
     background-size: cover;
 }
 #TreeImg div{
     position: relative;
-    top: 100px;
+    top: 200px;
     color: rgba(255, 255, 255, 0.44);
     font-size: 7em;
     width: 100%;
@@ -129,11 +129,15 @@ body {
     margin: auto;
 
 }
+#gamer {
+    padding-bottom: 290px;
+    padding-right: 600px;
+}
 #img4{
     position: relative;
     margin:0;
     width: 600px; 
-    background-image: url(../Pics/app.JPG);
+    background-image: url(../images/app.JPG);
     background-size: 600px 312px;
     transition: 1s ease;
 }
@@ -264,9 +268,7 @@ nav a:active {
     opacity: 0;
 }
 
-#img4 {
-    transition: 0.5s ease;
-}
+
 
 .slide {
     position: relative;
@@ -597,7 +599,7 @@ input {
 /*Portfolio*/
 
 #matchingCards {
-    background-image: url(../Pics/app.JPG);
+    background-image: url(../images/app.JPG);
     background-size: cover;
     display: block;
     width: 100%;
@@ -606,7 +608,16 @@ input {
 }
 
 #colorGame {
-    background-image: url(../Pics/colors.JPG);
+    background-image: url(../images/colors.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+}
+
+#Circles {
+    background-image: url(../images/Circles.png);
     background-size: cover;
     display: block;
     width: 100%;

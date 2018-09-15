@@ -1,43 +1,39 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-    <title>AboutMe!</title>
-    <link rel="shortcut icon" href="../Pics\mylogo.png">
-    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="shortcut icon" href="../assets/images\mylogo.png">
+    <link rel="stylesheet" href="../assets/CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<meta name="viewport" content="initial-scale=1.0">
 </head>
 
-<body>    
-         <nav class="fixedNav">
+<body>
+    <nav id="nav2">
         <!--my navigation bar -->
-        <section id="item"><hr><hr><hr><hr></section>
-        <ul id="subitem">
+        <ul>
+            <li> <a href="../index.html" title="Home"><img src="../assets/images/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html" style="text-decoration: underline">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
             <li> <a href="Contact.html">Contact</a></li>
-             <li> <a href="Portfolio.html">Portfolio</a></li>
+            <li> <a href="Portfolio.html">Portfolio</a></li>
         </ul>
-    </nav>
 
+    </nav>
     <header id="oneLine">
-        <img id="me" src="../Pics/me3.jpg" title="Me!!" alt="a picture of me!!">
-        <section class="h1">
-            <h1>Freelancer</h1>
-            <h2>Web developer</h2>
-            <h3><a class="clickMes2" href="../Resume/Resume_Kizito%20Njoku.pdf" target="_blank">Resume</a></h3>
-        </section>
+        <img id="me" src="../assets/images/me3.jpg" title="Me!!" alt="a picture of me!!">
+        <h1>Freelancer</h1>
+        <h2>Web developer</h2>
+        <h3><a class="links" href="../Resume/Resume_Kizito%20Njoku.pdf" target="_blank">Resume</a></h3>
     </header>
-    <main class="bground" style="font-size: 12pt;">
-        <p>Programming has been my passion since College. I was first introduced to programming in middle school, they were HTML and CSS. I didn’t quite under these languages at such early age, but I enjoyed them. I was introduced to them again in college. C++ opened my eyes to the world of coding and showed me that I can create almost anything on the computer. The very first software application I created was a calculator using C++. Next, was a simple game I called “Don’t Get Hit.” After C++, Java jumped into my coding world. Java caught my interest, because it is found in almost every electronic device. With Java, I also created a calculator along with a game called “floppy block”, sounds like “floppy birds” right? Next in my programming world, was HTML. With HTML the languages CSS, bootstrap, JavaScript, jQuery, MySQL, and PHP came in to join. I created this website using these languages.</p>
+    <main>
+        <p>Programming has been my passion since College. I was first introduced to programming in middle school, HTML and CSS. I didn’t quite understand the languages at such an early age, but I indeed loved every moment of it. It was later in my collegiate life I became greatly intrigued to programming. C++ opened my eyes to the world of coding and showed me that my creativity on a computer is limitless! The very first software application I created was a calculator using C++. The more knowledge I gained acquired me to develop more complex things, hence a game I created called “Don’t Get Hit.” After C++, Java advanced me to new heights in my world of coding. Java caught my eye because it is found in almost every electronic device. With Java, I also created a more sophisticated calculator along with a game called “Floppy Block”, which is simply an emulation of the trendiest game at its time “Flappy Bird”. As I venture more into the programming world, HTML became a strong suit for me. With HTML I became affiliated with the languages CSS, bootstrap, JavaScript, jQuery, MySQL, and PHP. Using these languages, I have developed multiple websites.</p>
         <br>
 
-        <p><span><a href="https://bonisg.000webhostapp.com/index.html" target="_blank" class="clickMes">Boni's Garage</a></span> is one of the websites I created. Feel free to check it out. feel free to check it out.</p>
+        <p><span><a href="https://bonisg.000webhostapp.com/index.html" target="_blank" class="clickMes">Boni's Garage</a></span> is one of the websites I created. Feel free to check it out.</p>
         <br>
         <p>Programming is amazing isn't it?! Whenever I code and the project works, it gives me such an amazing feeling. It feels like completing a puzzle, each right piece you connect, gets you closer to completing the puzzle.</p>
         <br>
@@ -47,12 +43,13 @@
         <br>
 
         <section>
-            <p>In high school I used to make animes with Adobe Flash CS3 <span> <img src="../Pics/Flash.JPG" width="20px"> </span> and I upload a few on my YouTube account. Here is one of my videos</p>
-            <iframe id="video" src="https://www.youtube.com/embed/KZDwROTWHsc" frameborder="0"  allowfullscreen></iframe>
+            <p>In high school I used to make animes with Adobe Flash CS3 <span> <img src="../assets/images/Flash.JPG" width="20px"> </span> and I upload a few on my YouTube account. Here is one of my videos</p>
+            <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/KZDwROTWHsc" frameborder="0" allowfullscreen></iframe>
         </section>
-        
+
     </main>
-        <footer>
+    <footer>
+
         <ul>
             <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </li>
@@ -64,14 +61,21 @@
             </li>
         </ul>
 
+         <small>&copy; Copyright 2017-2018 Kizito Njoku, all rights reserved.
 
-        <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.</small>
+        </small>
 
+        <script>
+            var nav2 = document.getElementById("nav2");
+            var sticky = nav2.offsetTop;
+            // grabs a class type selector and adds it to the Id
+            function fixed() {
+                window.pageYOffset > sticky ? nav2.classList.add("fixedNav") : nav2.classList.remove("fixedNav");
+            }
+            window.addEventListener("scroll", fixed);
+        </script>
     </footer>
-        
-    <script>$("#item").click(function () {
-        $("#subitem").slideToggle(500);
-    });</script>
+
 </body>
 
 </html>

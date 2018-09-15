@@ -40,7 +40,7 @@ button {
     max-width: 360px;
     height: 280px;
     z-index: 0;
-     background-image: url(../Pics/Coding_Tree.jpg);
+     background-image: url(../images/Coding_Tree.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -78,7 +78,7 @@ hr {
     position: -moz-sticky;
     position: -o-sticky;
     position: -ms-sticky;
-    top: 0;
+    top: -1px;
     z-index: 8;
     width: 100%;
     margin:0 auto;
@@ -161,11 +161,16 @@ nav a:active {
     opacity: 0;
 }
 #img4 {
-    background-image: url(../Pics/app.JPG);
+    background-image: url(../images/app.JPG);
     background-size: 200px 105px;
     width: 200px;
+    height: 105px;
     margin: 0;
-    transition: 1s ease;
+    transition: 0.4s ease;
+}
+#gamer{
+    padding-bottom: 85px;
+    padding-right: 200px;
 }
 .slide {
     position: relative;
@@ -238,6 +243,13 @@ footer li {
     text-decoration: none;    
 }
 
+footer a {
+    color: white; 
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
 #read {
     font-size: 16pt;
     color: white;
@@ -349,7 +361,7 @@ small {
 /*Interest  */
 
 #iback {
-    background-image: url(../Pics/PsVr.JPG);
+    background-image: url(../images/PsVr.JPG);
     background-repeat: no-repeat;
     background-color: #020239;
     background-size: cover;
@@ -467,7 +479,7 @@ input {
 /*Portfolio*/
 
 #matchingCards {
-    background-image: url(../Pics/app.JPG);
+    background-image: url(../images/app.JPG);
     background-size: cover;
     display: block;
     width: 100%;
@@ -476,7 +488,16 @@ input {
 }
 
 #colorGame {
-    background-image: url(../Pics/colors.JPG);
+    background-image: url(../images/colors.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 210px;
+}
+
+#Circles {
+    background-image: url(../images/Circles.png);
     background-size: cover;
     display: block;
     width: 100%;
@@ -504,6 +525,8 @@ input {
 #games a:active {
     background-color: black;
 }
+
+
 
 
 

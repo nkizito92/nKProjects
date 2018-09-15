@@ -2,21 +2,21 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    <link rel="shortcut icon" href="Pics\mylogo.png">
+    <link rel="stylesheet" type="text/css" href="../assets/CSS/main.css">
+    <link rel="shortcut icon" href="/assets/images\mylogo.png">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/b563a0f3f3.js"></script>
-    <script src="../JS/index.js"></script>
+    <script src="../assets/JS/index.js"></script>
 </head>
 
 <body class="Contactbground" >
-    <img id="backgroundImg" src="../Pics/DragonWarriors.jpg">
+    <img id="backgroundImg" src="../images/DragonWarriors.jpg">
    <nav>
         <!--my navigation bar -->
         <ul>
-            <li> <a href="../index.html" title="Home"><img src="../Pics/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
+            <li> <a href="../index.html" title="Home"><img src="../assets/images/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>

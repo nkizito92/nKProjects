@@ -15,7 +15,19 @@ Array.prototype.cardsshuffle = function () {
 
     }
 }
-
+// Random colors
+function randomColor() {
+    var r = Math.floor(Math.random() * 256),
+        g = Math.floor(Math.random() * 256),
+        b = Math.floor(Math.random() * 256);
+    return "rgb( " + r + ", " + g + ", " + b + " )";
+}
+// change background
+function changeBgroundColor() {
+    clearInterval(timer);
+  var bgroundColor = document.getElementById("bColors");
+  var timer = setInterval(function() {bgroundColor.style.background = "linear-gradient(90deg,black," + randomColor() +")";}, 4000);
+}
 function cards() {
     lives = 3;
     var liveDisplay = document.getElementById("lives");
@@ -26,14 +38,17 @@ function cards() {
     var output = "";
     val.cardsshuffle();
     for (var i = 0; i < val.length; i++) {
-        output +='<div id="cardss'  + i + '"onclick="cardflip(this,\'' + val[i] + '\')"></div>';
+        output += '<div id="cardss' + i + '"onclick="cardflip(this,\'' + val[i] + '\')"></div>';
     }
     document.getElementById("cards").innerHTML = output;
 
     document.getElementById("winner").innerHTML = "";
-    document.getElementById("reset").removeEventListener("click", function() {sounds[1].play(); cards();} );
+    document.getElementById("reset").removeEventListener("click", function () {
+        sounds[1].play();
+        cards();
+    });
 }
-// try  to make them images instead of letters 
+
 function cardflip(card, valu) {
     var liveDisplay = document.getElementById("lives");
     if (card.innerHTML == "" && values.length < 2) {
@@ -69,10 +84,14 @@ function cardflip(card, valu) {
                     } else if (back === "normal") {
                         cback.className = "";
                     }
-                    var g = document.getElementById("reset").hidden = false;
-                    var goo = document.getElementById("reset")
-                    goo.innerHTML = "Reset game";
-                    goo.addEventListener("click", function() {sounds[1].play(); cards();});
+                    //  shows reset button 
+                    document.getElementById("reset").hidden = false;
+                    var reset = document.getElementById("reset");
+                    reset.innerHTML = "Reset game";
+                    reset.addEventListener("click", function () {
+                        sounds[3].play();
+                        cards();
+                    });
 
                 }
                 // picking the wrong card
@@ -98,7 +117,7 @@ function cardflip(card, valu) {
                     lives = 0;
                     liveDisplay.textContent = lives;
                     setTimeout(cards, 701);
-                    
+
                 }
             }
 

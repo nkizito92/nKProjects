@@ -1,21 +1,21 @@
 function index() {
     "use strict";
     // removes greeting text
-    setTimeout(function(){
+    setTimeout(function () {
         var greetings = document.querySelectorAll("#TreeImg div");
-       for(var remove = 0; remove < greetings.length; remove++){
-           greetings[remove].innerHTML= "";
-       } 
+        for (var remove = 0; remove < greetings.length; remove++) {
+            greetings[remove].innerHTML = "";
+        }
     }, 4000);
     if (screen.width <= 800) {
         window.location.replace("MobilePort/index.html");
     }
     var nav = document.querySelector("nav");
     var sticky = nav.offsetTop;
-    var games = ["url(../Pics/app.JPG)", "url(../Pics/colors.JPG)"];
+    var games = ["url(../assets/images/app.JPG)", "url(../assets/images/colors.JPG)", "url(../assets/images/Circles.png)"];
     var gameimgs = 0;
-    function fixed() {
 
+    function fixed() {
         window.pageYOffset >= sticky ? nav.className = "fixedNav" : nav.className = "";
     }
     // slide names for images
@@ -39,10 +39,9 @@ function index() {
         } else {
             slideB.className = "slideback";
             slideB.style.opacity = 0;
-
-
         }
     }
+    var gaming = document.getElementById("gamer");
 
     function slide3() {
         if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
@@ -52,18 +51,20 @@ function index() {
             slideC.className = "slideback";
             slideC.style.opacity = 0;
         }
-        
+
     }
     // Changes app images 
-    setInterval(function(){
+    var gamer = ["game/MatchCards/matchCards.html",
+"game/ColorGame/Colors.html", "Challenges/Circles/Circles.html"];
+    setInterval(function () {
         gameimgs++;
-            if(gameimgs > games.length -1){
-                gameimgs= 0;
-            }
-        slideC.style.backgroundImage = games[gameimgs];
+        if (gameimgs > games.length - 1) {
+            gameimgs = 0;
         }
-    , 3000);
-    
+        slideC.style.backgroundImage = games[gameimgs];
+        gaming.setAttribute("href", gamer[gameimgs]);
+    }, 3000);
+
     function slide4() {
         if (document.body.scrollTop > 2440 || document.documentElement.scrollTop > 2440) {
             slideD.className = "slide";
@@ -71,19 +72,16 @@ function index() {
         } else {
             slideD.className = "slideback";
             slideD.style.opacity = 0;
-
-
         }
     }
-    
     var movers = [slide1, slide2, slide3, slide4, fixed];
 
-    function sliding_Fixed() {
-        for (var i = 0; i <= movers.length; i++) {
+    function sliding() {
+        for (var i = 0; i <= movers.length - 1; i++) {
             window.addEventListener("scroll", movers[i]);
         }
     }
-    sliding_Fixed();
+    sliding();
 
     function submition() {
         document.forms["formSub"].action = 'submit.php';

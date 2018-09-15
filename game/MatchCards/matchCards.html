@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="cards.css">
-    <link rel="shortcut icon" href="../../Pics/app.JPG">
+    <link rel="shortcut icon" href="../../assets/images/app.JPG">
     <title>
         Matching Cards
     </title>
@@ -11,9 +11,9 @@
     <script src="cards.js"></script>
 </head> 
 
-<body>
+<body id="bColors">
     <main>
-            <a href="javascript:history.back()" class="clickMes">Go Back!!!</a>
+            <a href="javascript:history.back()" class="clickMes">&#8678;</a>
         <div class="life">Lives: <span id="lives">3</span></div>
 
         <div id="cards"> <img src="" alt="">
@@ -21,6 +21,7 @@
         <audio src="Sounds/Wrong.mp3" preload="auto"></audio>
         <audio src="Sounds/strike.mp3" preload="auto"></audio>
         <audio src="Sounds/confetti.mp3" preload="auto"></audio>
+        <audio src="Sounds/flip.mp3" preload="auto"></audio>
         <section id="textAlign">
             <div id="img"></div>
             <div id="winner"> </div>
@@ -29,6 +30,7 @@
 
         <script>
             cards();
+            changeBgroundColor();
         </script>
     </main>
 </body>

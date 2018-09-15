@@ -15,6 +15,19 @@ Array.prototype.cardsshuffle = function () {
 
     }
 }
+// Random colors
+function randomColor() {
+    var r = Math.floor(Math.random() * 256),
+        g = Math.floor(Math.random() * 256),
+        b = Math.floor(Math.random() * 256);
+    return "rgb( " + r + ", " + g + ", " + b + " )";
+}
+// change background
+function changeBgroundColor() {
+    clearInterval(timer);
+  var bgroundColor = document.getElementById("bColors");
+  var timer = setInterval(function() {bgroundColor.style.background = "linear-gradient(90deg,black," + randomColor() +")";}, 4000);
+}
 
 function cards() {
     lives = 3;
@@ -72,7 +85,7 @@ function cardflip(card, valu) {
                     var g = document.getElementById("reset").hidden = false;
                     var goo = document.getElementById("reset")
                     goo.innerHTML = "Reset game";
-                    goo.addEventListener("click", function() {sounds[1].play(); cards();});
+                    goo.addEventListener("click", function() {sounds[3].play(); cards();});
 
                 }
                 // picking the wrong card

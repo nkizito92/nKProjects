@@ -6,12 +6,12 @@ function index() {
     });
 
 
-    // slide names for images
+    // slide names for assets/images
     var slide = document.getElementById("img1");
     var slideB = document.getElementById("img3");
     var slideC = document.getElementById("img4");
     var slideD = document.getElementById("img5");
-    var games = ["url(../Pics/app.JPG)", "url(../Pics/colors.JPG)"];
+    var games = ["url(../assets/images/app.JPG)", "url(../assets/images/colors.JPG)", "url(../assets/images/Circles.png)"];
     var gameimgs = 0;
     slideC.style.height="104px";
     function slide1() {
@@ -30,7 +30,7 @@ function index() {
             slideB.style.opacity = 0;
         }
     }
-
+    var gaming = document.getElementById("gamer");
     function slide3() {
         if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
             slideC.className = "slide";
@@ -43,12 +43,15 @@ function index() {
         }
     }
     // Changes app images
+    var gamer = ["game/MatchCards/matchCards.html",
+"game/ColorGame/Colors.html", "../Challenges/Circles/Circles.html"];
      setInterval(function(){
          gameimgs++;
         if (gameimgs > games.length -1){
             gameimgs = 0;
         }
          slideC.style.backgroundImage = games[gameimgs];
+          gaming.setAttribute("href", gamer[gameimgs]);
     }, 3000);
 
     function slide4() {
