@@ -5,7 +5,8 @@
 body{background-color: #0d153a;}
 
 main {
-    max-width: 600px;
+    width: 100%;
+    max-width: 320px;
     margin:0 auto;
 }
 h3 {
@@ -131,7 +132,7 @@ text-decoration: underline;
     width: 30%;
     padding-bottom: 30%;
     float: left;
-    margin: 1.66%;
+    margin: 1.36%;
     border-radius: 15%;
     transition: background .6s;
     -webkit-transition: background .6s;

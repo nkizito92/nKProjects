@@ -46,7 +46,7 @@ button {
 }
 #TreeImg div{
     position: relative;
-    top: 200px;
+    top: 230px;
     color: rgba(255, 255, 255, 0.44);
     font-size: 7em;
     width: 100%;
@@ -57,7 +57,7 @@ button {
     position: relative;
     background-color: rgba(100, 100, 100, 0.7);
     width: 100%;
-    padding:0 80px;
+    padding:0 50px;
     right: 5500px;
     text-decoration: none;
     animation: run 2.5s normal linear;
@@ -68,7 +68,7 @@ button {
     position: relative;
     background-color: rgba(100, 100, 100, 0.7);
     width: 100%;
-    padding:0 80px;
+    padding:0 50px;
     left: 5500px;
     text-decoration: none;
     animation: run2 2.5s normal linear;
@@ -116,11 +116,10 @@ main {
     position: relative;
     background-color: rgb(108, 108, 108);
     margin: auto;
-    width: 100%;
+    width: 95%;
     max-width: 800px;
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 body {
@@ -152,7 +151,7 @@ body {
     text-align: center;
     z-index: 8;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-color: rgb(0, 0, 80);
     transition: 1s;
     -moz-transition: 1s;
@@ -174,7 +173,7 @@ nav {
     text-align: center;
     position: relative;
     padding: 23px 0;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     background-color: rgb(0, 0, 80);
 }
@@ -323,10 +322,11 @@ nav a:active {
 header {
     position: relative;
     background-color: rgb(0, 0, 56);
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     max-width: 700px;
     padding: 0 200px;
+    color: white;
 }
 
 header img {
@@ -433,15 +433,28 @@ small {
 /* About me */
 
 #oneLine {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 120px 0;
     color: white;
+    max-width: 1200px;
+    min-width: 360px;
+    width: 98%;
+}
+#oneLine h1, h2, h3{
+    width: 200px;
+}
+#oneLine div {
+    position: absolute;
+    margin: 0 auto;
+    width: 200px;
+    left: 180px;
+    bottom: 60px;
 }
 
 #oneLine a {
     color: white;
     text-decoration: none;
 }
+
 
 #oneLine a:active {
     color: yellow;
@@ -450,13 +463,17 @@ small {
 #me {
     position: absolute;
     left: 20px;
-    top: 50px;
+    bottom: 20px;
     opacity: 1;
     animation: cc 1s normal;
     width: 150px;
 
 }
-
+#myVideo {
+    width: 95%;
+    max-width: 560px;
+    height: 315px;
+}
 @keyframes cc {
     0% {
         left: -200px;
@@ -618,6 +635,22 @@ input {
 
 #Circles {
     background-image: url(../images/Circles.png);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+}
+#BonisG {
+    background-image: url(../images/BonisGarage.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+}
+#Todo {
+    background-image: url(../images/Todo.JPG);
     background-size: cover;
     display: block;
     width: 100%;

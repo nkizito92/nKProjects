@@ -4,7 +4,13 @@ function index() {
     $("#item").click(function () {
         $("#subitem").slideToggle(500);
     });
-
+    // removes greeting text
+    setTimeout(function () {
+        var greetings = document.querySelectorAll("#TreeImg div");
+        for (var remove = 0; remove < greetings.length; remove++) {
+            greetings[remove].innerHTML = "";
+        }
+    }, 4000);
 
     // slide names for assets/images
     var slide = document.getElementById("img1");

@@ -34,16 +34,79 @@ button {
 
 /*here is where I change the background color of section*/
 
-#pos { 
-    position: relative;
-    margin: auto;
-    max-width: 360px;
-    height: 280px;
+#TreeImg { 
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 71%;
     z-index: 0;
      background-image: url(../images/Coding_Tree.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     display: block;
+}
+
+#TreeImg div{
+    position: absolute;
+    text-align: left;
+    top: 60px;
+    color: rgba(255, 255, 255, 0.44);
+    font-size: 2em;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#TreeImg h1 {
+    position: relative;
+    background-color: rgba(100, 100, 100, 0.7);
+    width: 100%;
+    padding:0 20px;
+    right: 5500px;
+    text-decoration: none;
+    animation: run 2.5s normal linear;
+    text-align: center;  
+}
+
+#TreeImg h2 {
+    position: relative;
+    background-color: rgba(100, 100, 100, 0.7);
+    width: 100%;
+    padding:0 20px;
+    top: 66px;
+    left: 5500px;
+    text-decoration: none;
+    animation: run2 2.5s normal linear;
+    text-align: center;  
+}
+
+@keyframes run {
+    50%{
+      right: 10px;  
+    }
+    
+    95%{
+        right: -20px;
+    }
+    
+    100%{
+        right: -1400px;
+    }
+    
+}
+@keyframes run2 {
+    50%{
+      left: 10px;  
+    }
+    
+    95%{
+        left: -20px;
+    }
+    
+    100%{
+        left: -1400px;
+    }
+    
 }
 
 hr {
@@ -57,13 +120,13 @@ hr {
 #item{
     position: relative;
     display: block;
-    right: 45%;
+    right: 40%;
     width: 30px;
     color: white;
 }
 #item:hover {
     display:block;
-    width:30px;
+    width: 30px;
     background-color: #5a5a5a; 
 }
 #subitem{
@@ -82,7 +145,6 @@ hr {
     z-index: 8;
     width: 100%;
     margin:0 auto;
-    max-width: 320px;
     animation: fadedd 1s infinite;
 }
 @keyframes fadedd {
@@ -93,26 +155,24 @@ hr {
     text-decoration: underline;
 }
 main {
-    position: relative;
     background-color: rgb(108, 108, 108);
-    margin: auto;
-    width: 320px;
+    margin: 0 auto;
+    width: 87.5%;
+    max-width: 768px;
     height: auto;
-    padding: 0 20px ;
+    padding: 0 20px;
 }
 body {
-    position: relative;
     background-color: rgb(193, 193, 206);
-    margin:0 auto;
-    max-width: 360px;
+    margin: 0 auto;
 }
 
 nav {
     
     position: relative;
-    padding: 10px 20px;
+    padding: 10px 0;
     margin: 0 auto;
-    width: 320px;
+    width: 100%;
     background-color: rgb(0, 0, 80);
 }
 
@@ -216,7 +276,8 @@ nav a:active {
     color: white;
     font-size: 16pt;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 780px;
     padding: 0;
 }
 
@@ -224,7 +285,7 @@ header {
     position: relative;
     background-color:rgb(0, 0, 56);
     margin: auto;
-    width: 320px;
+    max-width: 780px;
 }
 
 
@@ -306,30 +367,41 @@ small {
 
 /* About me */
 #oneLine {
-   padding: 90px 20px;
-    color: white;
+   padding: 120px 20px;
+   color: white;
 }
 
 #me {
     position: absolute;
-    left: 10px;
-    top: 60px;
+    right: 102%;
+    top: -40px;
     opacity: 1;
     animation: cc 1s normal;
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
 }
-
+iframe {
+    max-width: 300px;
+    width: 100%;
+}
 .h1 {
-    position: relative;
+    text-align: left;
+    position: absolute;
     display: block;
-    width: 180px;
-    left: 80px;
+    width: 100%;
+    max-width: 170px;
+    left: 150px;
+    top: 60px;
 }
-
+.h1 h1 {
+    width: 170px;
+}
 .h1 h2 { 
+    width: 170px;
     display: block;
 }
 .h1 h3 { 
+    width: 170px;
     display: block;
 }
 .h1 a {
@@ -342,7 +414,7 @@ small {
 
 @keyframes cc {
     0% {
-        left: -200px;
+        right: 200%;
         opacity: 0;
     }
     50% {
@@ -355,8 +427,9 @@ small {
 }
 #video {
     position: relative;
-    width: 260px;
-    height: 115px;
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
 }
 /*Interest  */
 
@@ -483,8 +556,8 @@ input {
     background-size: cover;
     display: block;
     width: 100%;
-    max-width: 360px;
-    height: 160px;
+    max-width: 720px;
+    padding-bottom: 50.8%;
 }
 
 #colorGame {
@@ -492,8 +565,8 @@ input {
     background-size: cover;
     display: block;
     width: 100%;
-    max-width: 360px;
-    height: 210px;
+    max-width: 720px;
+    padding-bottom: 65%;
 }
 
 #Circles {
@@ -501,8 +574,26 @@ input {
     background-size: cover;
     display: block;
     width: 100%;
-    max-width: 360px;
-    height: 210px;
+    max-width: 720px;
+    padding-bottom: 65%;
+}
+
+#BonisG {
+    background-image: url(../images/BonisGarage.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 65%;
+}
+
+#Todo {
+    background-image: url(../images/Todo.JPG);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 65%;
 }
 
 #games {

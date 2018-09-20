@@ -8,7 +8,7 @@ function index() {
         }
     }, 4000);
     if (screen.width <= 800) {
-        window.location.replace("MobilePort/index.html");
+        window.location.replace("M/index.html");
     }
     var nav = document.querySelector("nav");
     var sticky = nav.offsetTop;
@@ -83,9 +83,21 @@ function index() {
     }
     sliding();
 
-    function submition() {
-        document.forms["formSub"].action = 'submit.php';
-        document.forms["formSub"].submit();
-    }
 
 }
+// contact form script
+function contact() {
+        var success = document.getElementById("success");
+        var submitted = document.getElementById("submit");
+        var name = document.getElementsByName("name").value,
+        email = document.getElementsByName("email").value,
+        subject= document.getElementsByName("subject").value;
+        if(name === "" && email === "" && subject === ""){   
+    submitted.addEventListener("click", function () {
+        setTimeout(function(){
+            success.innerHTML = "Thank you for Contacting us!";
+            console.log(name, email, subject);
+        }, 5000);
+    });}
+
+    }
