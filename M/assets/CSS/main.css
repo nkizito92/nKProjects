@@ -109,25 +109,62 @@ button {
     
 }
 
-hr {
-    width: 30px;
-    height: 2px;
-    background-color: grey;
-    margin-bottom: 5px;
-    border-width: 0px;
-} 
-
-#item{
+#item {
     position: relative;
-    display: block;
     right: 40%;
-    width: 30px;
-    color: white;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 25%;
+    transition: all .3s linear;
 }
-#item:hover {
-    display:block;
-    width: 30px;
-    background-color: #5a5a5a; 
+.cirHamNav{
+    border-radius: 50% !important; 
+    transition: all .2s linear !important; 
+}
+#item div:nth-child(1){
+    position: relative;
+    width: 40%;
+    border: 1.4px solid white;
+    margin: 20% auto;
+    transition: all .2s linear;
+}
+#item div:nth-child(2){
+    position: relative;
+    width: 40%;
+    border: 1.4px solid white;
+    margin: 20% auto;
+    transition: all .2s linear;
+}
+#item div:nth-child(3){
+    position: relative;
+    width: 40%;
+    left: 0;
+    border: 1.4px solid white;
+    margin: 20% auto;
+    transition: all .2s linear;
+}
+ .third{
+    position: relative;
+    transform: translate(6px,-11px) rotate(-45deg);
+    margin: 0 auto;
+    transition: all .2s linear;
+}
+
+.first{
+    position: relative;
+    transform: translate(-6px ,11px) rotate(45deg);
+    transition: all .2s linear;
+    margin: 0 auto;
+}
+
+.second{
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+#item button {
+color: white;
+    background-color: black;
 }
 #subitem{
     display: none;
@@ -616,9 +653,3 @@ input {
 #games a:active {
     background-color: black;
 }
-
-
-
-
-
-

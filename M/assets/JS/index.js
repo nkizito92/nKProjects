@@ -1,7 +1,18 @@
 function index() {
     "use strict";
-
+    
+    // NavBar
+    
+     var navburger = {
+         divA: $("#item div:nth-child(1)"),
+         divB: $("#item div:nth-child(2)"),
+         divC: $("#item div:nth-child(3)")
+     }
     $("#item").click(function () {
+        $("#item").toggleClass("cirHamNav");
+        navburger.divC.toggleClass("third");
+        navburger.divA.toggleClass("first");
+        navburger.divB.toggleClass("second");
         $("#subitem").slideToggle(500);
     });
     // removes greeting text

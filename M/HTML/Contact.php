@@ -15,12 +15,11 @@
     <img id="backgroundImg" src="../assets/images/darkCloud.jpg">
     <nav class="fixedNav">
         <!--my navigation bar -->
-        <section id="item">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-        </section>
+        <div id="item">
+           <div></div> 
+           <div></div> 
+           <div></div> 
+        </div>
         <ul id="subitem">
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>

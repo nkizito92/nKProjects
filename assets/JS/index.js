@@ -1,15 +1,22 @@
 function index() {
     "use strict";
+    var LoadImg = document.getElementById("loadImg");
+    var TreeImg = document.getElementById("TreeImg");
+    var greetings = document.querySelectorAll("#TreeImg h1, h2");
+    TreeImg.addEventListener("load", function() {
+        greetings.style.display = "block";
+    });
+    
+   
+    window.addEventListener("load", function(){
+        LoadImg.style.display = "none";
+    });
     // removes greeting text
-    setTimeout(function () {
-        var greetings = document.querySelectorAll("#TreeImg div");
-        for (var remove = 0; remove < greetings.length; remove++) {
-            greetings[remove].innerHTML = "";
-        }
-    }, 4000);
+    /* */
+    
     if (screen.width <= 800) {
         window.location.replace("M/index.html");
-    }
+    };    
     var nav = document.querySelector("nav");
     var sticky = nav.offsetTop;
     var games = ["url(../assets/images/app.JPG)", "url(../assets/images/colors.JPG)", "url(../assets/images/Circles.png)"];
