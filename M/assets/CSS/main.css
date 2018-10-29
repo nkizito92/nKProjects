@@ -113,9 +113,9 @@ button {
     position: relative;
     right: 40%;
     width: 40px;
-    border: 1px solid white;
+    border: 1.3px solid white;
     border-radius: 25%;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .cirHamNav{
     border-radius: 50% !important; 
@@ -124,14 +124,16 @@ button {
 #item div:nth-child(1){
     position: relative;
     width: 40%;
-    border: 1.4px solid white;
+    border: 1.5px solid white;
+    background-color: white;
     margin: 20% auto;
     transition: all .2s linear;
 }
 #item div:nth-child(2){
     position: relative;
     width: 40%;
-    border: 1.4px solid white;
+    border: 1.5px solid white;
+    background-color: white;
     margin: 20% auto;
     transition: all .2s linear;
 }
@@ -139,7 +141,8 @@ button {
     position: relative;
     width: 40%;
     left: 0;
-    border: 1.4px solid white;
+    border: 1.5px solid white;
+    background-color: white;
     margin: 20% auto;
     transition: all .2s linear;
 }
@@ -162,9 +165,8 @@ button {
     transition: all .2s linear;
 }
 
-#item button {
-color: white;
-    background-color: black;
+#item:hover {
+cursor: pointer;
 }
 #subitem{
     display: none;

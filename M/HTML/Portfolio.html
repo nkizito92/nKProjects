@@ -1,23 +1,26 @@
 <!Doctype html>
 <html>
-    <head> 
+
+<head>
     <title>Portfolio</title>
     <link rel="shortcut icon" href="../assets/images\mylogo.png">
     <link rel="stylesheet" href="../assets/CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-        <meta name="viewport" content="initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src="../assets/JS/index.js"></script>
 </head>
 
 <body>
-     <nav class="fixedNav">
+    <nav class="fixedNav">
         <!--my navigation bar -->
         <div id="item">
-           <div></div> 
-           <div></div> 
-           <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <ul id="subitem">
             <li> <a href="../index.html">Home</a></li>
@@ -33,40 +36,45 @@
     </header>
     <main>
         <section id="games">
-        <h1>Games</h1>
-        <a href="../game/MatchCards/matchCards.html">MatchingCards<section id="matchingCards"></section></a>
-        <a href="../game/ColorGame/Colors.html">Color Game
-       <section id="colorGame"></section></a>
+            <h1>Games</h1>
+            <a href="../game/MatchCards/matchCards.html">MatchingCards<section id="matchingCards"></section></a>
+            <a href="../game/ColorGame/Colors.html">Color Game
+                <section id="colorGame"></section></a>
             <a href="/Challenges/Circles/Circles.html">Circles<section id="Circles"></section></a>
-        <h1>Projects</h1>
+            <h1>Projects</h1>
             <a href="/Challenges/ToDo/index.html" target="_blank">Todo List<section id="Todo"></section></a>
-             <a href="https://bonisg.000webhostapp.com" target="_blank">Boni's Garage<section id="BonisG">
+            <a href="https://bonisg.000webhostapp.com" target="_blank">Boni's Garage<section id="BonisG">
                 </section></a>
         </section>
-        
+
     </main>
     <footer>
 
         <ul>
-            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <li> <a id="facebook" href="https://www.facebook.com/kizito.njoku" target="_blank"><i class="fa fa-facebook-official fa-2x"
+                        aria-hidden="true"></i></a>
             </li>
-            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            <li> <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UC6OXldC5CIA1HgRXRKWUBfQ"><i
+                        class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
             </li>
-            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+            <li> <a id="linkedIn" href="https://www.linkedin.com/in/kizito-njoku-606b8aa5/" target="_blank"><i class="fa fa-linkedin-square fa-2x"
+                        aria-hidden="true"></i></a>
             </li>
-            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <li> <a href="https://github.com/nkizito92" id="github" target="_blank"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a>
             </li>
         </ul>
 
         <small>&copy; copyright 2017 Kizito Njoku, all rights reserved.
             <br>
-        <a href="https://www.bensound.com/royalty-free-music">Bensound's Royalty</a> Free Music Copyright &copy; 2012-2018</small>
+            <a href="https://www.bensound.com/royalty-free-music">Bensound's Royalty</a> Free Music Copyright &copy;
+            2012-2018</small>
     </footer>
-         
-    <script>$("#item").click(function () {
-        $("#subitem").slideToggle(500);
-    });
-        
-     </script>
+
+    <script>
+        nav();
+
+    </script>
 </body>
+
 </html>
