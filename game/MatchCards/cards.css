@@ -1,108 +1,103 @@
-
 #bColors {
-    transition: 2s ease;
-    background: linear-gradient(90deg, black, rgb( 211, 255, 156)); 
-    margin:0 auto;
+  transition: 2s ease;
+  background: linear-gradient(90deg, black, rgb(211, 255, 156));
+  margin: 0 auto;
 }
 .clickMes {
-    position: relative;
-    bottom: 20px;
-    color: white;
-    font-size: 36pt;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 5px;
+  position: relative;
+  bottom: 20px;
+  color: white;
+  font-size: 36pt;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px;
 }
 .life {
-    font-size: 16pt;
-    color: white;
-    width: 100px;
-    margin: 0 auto;
+  font-size: 16pt;
+  color: white;
+  width: 100px;
+  margin: 0 auto;
 }
 .clickMes:active {
-    color: cyan;
+  color: cyan;
 }
 
 .clickMes:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 main {
-    position: relative;
-    text-align: center;
-    top: 100px;
+  position: relative;
+  text-align: center;
+  top: 100px;
 }
 
 .firecrack {
-    background: url(../../assets/images/fireworks.gif) 810px 400px !important; 
+  background: url(../../assets/images/fireworkss.gif) 810px 400px !important;
 }
 div#cards {
-    border: 2px black solid;
-    width: 810px;
-    height: 400px;
-    background: linear-gradient(black, cyan, black);
-    margin: auto;
+  border: 2px black solid;
+  width: 810px;
+  height: 400px;
+  background: linear-gradient(black, cyan, black);
+  margin: auto;
 }
 
 div#cards > div {
-    border: 1px black solid;
-    height:180px;
-    width:180px;
-    background: url('../../assets/images/fire.jpg') no-repeat;
-    background-size: 180px 180px;
-    margin: 10px;
-    float: left;
-    line-height: 180px;
-    text-align:center;
-    font-size: 45pt;
-    cursor: pointer;
+  border: 1px black solid;
+  height: 180px;
+  width: 180px;
+  background: url("../../assets/images/fire.jpg") no-repeat;
+  background-size: 180px 180px;
+  margin: 10px;
+  float: left;
+  line-height: 180px;
+  text-align: center;
+  font-size: 45pt;
+  cursor: pointer;
 }
 
 .class {
-    width:500px;
-    height: 400px
+  width: 500px;
+  height: 400px;
 }
 #winner {
-    position: relative;
-    font-size: 29pt;
-    text-align: center;
-    bottom: 230px;
-    color: white;
-    text-shadow: 3px 3px 5px cyan;
-    width: 400px;
-    border-radius: 40px;
-    margin:auto;
+  position: relative;
+  font-size: 29pt;
+  text-align: center;
+  bottom: 230px;
+  color: white;
+  text-shadow: 3px 3px 5px cyan;
+  width: 400px;
+  border-radius: 40px;
+  margin: auto;
 }
 
 #reset {
-    position: relative;
-    margin:auto;
-    bottom: 200px;
-    background-color: rgba(0, 0, 255, 0.73);
-    color: white;
-    outline: none;
-    border-radius: 40px;
-    padding: 2px 20px;
-    font-size: 16pt;
-    
+  position: relative;
+  margin: auto;
+  bottom: 200px;
+  background-color: rgba(0, 0, 255, 0.73);
+  color: white;
+  outline: none;
+  border-radius: 40px;
+  padding: 2px 20px;
+  font-size: 16pt;
 }
 #reset:active {
-    background-color: rgba(0, 0, 165, 0.73); 
-    color: cyan;
+  background-color: rgba(0, 0, 165, 0.73);
+  color: cyan;
 }
 
 #hh {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-
+  position: absolute;
+  width: 400px;
+  height: 300px;
 }
 
 #textAlign {
-    position: relative;
-    margin: auto;
-     width: 810px;  
-    text-align: center;
+  position: relative;
+  margin: auto;
+  width: 810px;
+  text-align: center;
 }
-
-

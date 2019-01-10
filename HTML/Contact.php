@@ -20,7 +20,7 @@
             <li> <a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
-            <li> <a href="Contact.php" style="text-decoration: underline">Contact</a></li>
+            <li> <a id="path" href="Contact.php" style="text-decoration: underline">Contact</a></li>
             <li> <a href="Portfolio.html">Portfolio</a></li>
         </ul>
 

@@ -1,95 +1,94 @@
 body {
-    background-color: black;
-    width: 360px;
-    text-align: center;
-    margin: auto;
+  background-color: black;
+  width: 360px;
+  text-align: center;
+  margin: auto;
 }
-#bColors{
-     background: linear-gradient(90deg, black, green);
+#bColors {
+  background: linear-gradient(90deg, black, green);
 }
 
 .clickMes {
-    color: white;
-    font-size: 20pt;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 3px;
+  color: white;
+  font-size: 20pt;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 3px;
 }
 
 .clickMes:active {
-    color: cyan;
+  color: cyan;
 }
 
 .clickMes:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .life {
-    font-size: 12pt;
-    color: white;
-    width: 70px;
-    margin: 0 auto;
+  font-size: 12pt;
+  color: white;
+  width: 70px;
+  margin: 0 auto;
 }
 
 .move {
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .firecrack {
-    background: url(../../assets/images/fireworks.gif) 810px 400px !important;
-
+  background: url(../../assets/images/fireworkss.gif) 200px 155px !important;
+  background-size: ;
 }
 
 div#cards {
-    border: 2px black solid;
-    width: 308px;
-    height: 155px;
-    background: linear-gradient(black, cyan, black);
-    margin: auto;
+  border: 2px black solid;
+  width: 308px;
+  height: 155px;
+  background: linear-gradient(black, cyan, black);
+  margin: auto;
 }
 
 div#cards > div {
-    border: 1px black solid;
-    height: 65px;
-    width: 65px;
-    background: url('../../assets/images/fire.jpg') no-repeat;
-    background-size: 65px 65px;
-    margin: 5px;
-    float: left;
-    line-height: 2.3;
-    text-align: center;
-    font-size: 16pt;
-    cursor: pointer;
+  border: 1px black solid;
+  height: 65px;
+  width: 65px;
+  background: url("../../assets/images/fire.jpg") no-repeat;
+  background-size: 65px 65px;
+  margin: 5px;
+  float: left;
+  line-height: 2.3;
+  text-align: center;
+  font-size: 16pt;
+  cursor: pointer;
 }
 
 #winner {
-    position: relative;
-    font-size: 18pt;
-    text-align: center;
-    bottom: 100px;
-    color: white;
-    text-shadow: 3px 3px 5px cyan;
-    width: 310px;
-    margin: auto;
+  position: relative;
+  font-size: 18pt;
+  text-align: center;
+  bottom: 100px;
+  color: white;
+  text-shadow: 3px 3px 5px cyan;
+  width: 310px;
+  margin: auto;
 }
 
 #reset {
-    position: relative;
-    margin: auto;
-    bottom: 100px;
-    background-color: rgba(0, 0, 255, 0.73);
-    color: white;
-    outline: none;
-    border-radius: 40px;
-    padding: 2px 20px;
-    font-size: 16pt;
+  position: relative;
+  margin: auto;
+  bottom: 100px;
+  background-color: rgba(0, 0, 255, 0.73);
+  color: white;
+  outline: none;
+  border-radius: 40px;
+  padding: 2px 20px;
+  font-size: 16pt;
 }
 
 #textAlign {
-    position: relative;
-    margin: auto;
-    width: 310px;
-    text-align: center;
+  position: relative;
+  margin: auto;
+  width: 310px;
+  text-align: center;
 }
