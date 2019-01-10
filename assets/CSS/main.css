@@ -614,7 +614,7 @@ input {
   color: white;
   text-decoration: none;
 }
-#games a[href"#"] {
+#games a[href="#"] {
   text-decoration: none;
 }
 
