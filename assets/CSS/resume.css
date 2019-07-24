@@ -1,0 +1,73 @@
+body {
+  background-color: #a8a8a8;
+}
+.leftBackground {
+  background-color: darkblue;
+}
+h1 {
+  font-weight: 800;
+}
+.resume {
+  color: white;
+}
+
+.leftHeader {
+  font-size: 28pt;
+  font-weight: 700;
+  background-color: #000053;
+  padding: 0 10px;
+}
+.col-md {
+  margin: 0 auto;
+}
+.label {
+  font-size: 14pt;
+  font-weight: bold;
+}
+.label a {
+  color: #3b3b3b;
+}
+
+.label-underline {
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rounded a {
+  color: white;
+}
+.rounded {
+  padding: 2px;
+  font-weight: bold;
+  color: white;
+  font-size: 14pt;
+}
+.rounded a:hover {
+  background-color: white;
+  color: #3b3b3b;
+}
+
+/* white side */
+
+.rightBackground {
+  background-color: #f7f7f7;
+  color: #555555;
+}
+.rightHeader {
+  font-size: 28pt;
+  color: #000053;
+  font-weight: 700;
+  border: 0.4px #dbdbdb solid;
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+}
+
+table td {
+  border: 1px #a8a8a8 dotted;
+}
+
+.italic {
+  font-style: italic;
+}

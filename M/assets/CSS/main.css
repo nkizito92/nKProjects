@@ -1,511 +1,498 @@
 * {
-    margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
 }
 
-::-webkit-scrollbar{
-    min-width: 10px;
+::-webkit-scrollbar {
+  min-width: 10px;
 }
 
-::-webkit-scrollbar-thumb { 
-    background-color: rgb(0, 0, 110);
-    border-radius: 5px; 
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 110);
+  border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background-color: black;
-     
+::-webkit-scrollbar-thumb:hover {
+  background-color: black;
 }
-::-webkit-scrollbar-thumb:active{
-    background-color: white;
-     
+::-webkit-scrollbar-thumb:active {
+  background-color: white;
 }
 ::-webkit-scrollbar-track {
-    background-color: #a0a0a0;
-    border-radius: 5px
+  background-color: #a0a0a0;
+  border-radius: 5px;
 }
 
 button {
-    border-radius: 5px;
-    border: none;
-    padding: 10px 7px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 7px;
 }
 
 /*here is where I change the background color of section*/
 
-#TreeImg { 
-    margin: 0 auto;
-    width: 100%;
-    padding-bottom: 71%;
-    z-index: 0;
-     background-image: url(../images/Coding_Tree.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: block;
+#TreeImg {
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 71%;
+  z-index: 0;
+  background-image: url(../images/Coding_Tree.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
 }
 
-#TreeImg div{
-    position: absolute;
-    text-align: left;
-    top: 60px;
-    color: rgba(255, 255, 255, 0.44);
-    font-size: 2em;
-    margin: 0 auto;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+#TreeImg div {
+  position: absolute;
+  text-align: left;
+  top: 60px;
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 2em;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
 #TreeImg h1 {
-    position: relative;
-    background-color: rgba(100, 100, 100, 0.7);
-    width: 100%;
-    padding:0 20px;
-    right: 5500px;
-    text-decoration: none;
-    animation: run 2.5s normal linear;
-    text-align: center;  
+  position: relative;
+  background-color: rgba(100, 100, 100, 0.7);
+  width: 100%;
+  padding: 0 20px;
+  right: 5500px;
+  text-decoration: none;
+  animation: run 2.5s normal linear;
+  text-align: center;
 }
 
 #TreeImg h2 {
-    position: relative;
-    background-color: rgba(100, 100, 100, 0.7);
-    width: 100%;
-    padding:0 20px;
-    top: 66px;
-    left: 5500px;
-    text-decoration: none;
-    animation: run2 2.5s normal linear;
-    text-align: center;  
+  position: relative;
+  background-color: rgba(100, 100, 100, 0.7);
+  width: 100%;
+  padding: 0 20px;
+  top: 66px;
+  left: 5500px;
+  text-decoration: none;
+  animation: run2 2.5s normal linear;
+  text-align: center;
 }
 
 @keyframes run {
-    50%{
-      right: 10px;  
-    }
-    
-    95%{
-        right: -20px;
-    }
-    
-    100%{
-        right: -1400px;
-    }
-    
+  50% {
+    right: 10px;
+  }
+
+  95% {
+    right: -20px;
+  }
+
+  100% {
+    right: -1400px;
+  }
 }
 @keyframes run2 {
-    50%{
-      left: 10px;  
-    }
-    
-    95%{
-        left: -20px;
-    }
-    
-    100%{
-        left: -1400px;
-    }
-    
+  50% {
+    left: 10px;
+  }
+
+  95% {
+    left: -20px;
+  }
+
+  100% {
+    left: -1400px;
+  }
 }
 
 #item {
-    position: relative;
-    right: 40%;
-    width: 40px;
-    border: 1.3px solid white;
-    border-radius: 25%;
-    transition: all .2s linear;
+  position: relative;
+  right: 40%;
+  width: 40px;
+  border: 1.3px solid white;
+  border-radius: 25%;
+  transition: all 0.2s linear;
 }
-.cirHamNav{
-    border-radius: 50% !important; 
-    transition: all .2s linear !important; 
+.cirHamNav {
+  border-radius: 50% !important;
+  transition: all 0.2s linear !important;
 }
-#item div:nth-child(1){
-    position: relative;
-    width: 40%;
-    border: 1.5px solid white;
-    background-color: white;
-    margin: 20% auto;
-    transition: all .2s linear;
+#item div:nth-child(1) {
+  position: relative;
+  width: 40%;
+  border: 1.5px solid white;
+  background-color: white;
+  margin: 20% auto;
+  transition: all 0.2s linear;
 }
-#item div:nth-child(2){
-    position: relative;
-    width: 40%;
-    border: 1.5px solid white;
-    background-color: white;
-    margin: 20% auto;
-    transition: all .2s linear;
+#item div:nth-child(2) {
+  position: relative;
+  width: 40%;
+  border: 1.5px solid white;
+  background-color: white;
+  margin: 20% auto;
+  transition: all 0.2s linear;
 }
-#item div:nth-child(3){
-    position: relative;
-    width: 40%;
-    left: 0;
-    border: 1.5px solid white;
-    background-color: white;
-    margin: 20% auto;
-    transition: all .2s linear;
+#item div:nth-child(3) {
+  position: relative;
+  width: 40%;
+  left: 0;
+  border: 1.5px solid white;
+  background-color: white;
+  margin: 20% auto;
+  transition: all 0.2s linear;
 }
- .third{
-    position: relative;
-    transform: translate(6px,-11px) rotate(-45deg);
-    margin: 0 auto;
-    transition: all .2s linear;
-}
-
-.first{
-    position: relative;
-    transform: translate(-6px ,11px) rotate(45deg);
-    transition: all .2s linear;
-    margin: 0 auto;
+.third {
+  position: relative;
+  transform: translate(6px, -11px) rotate(-45deg);
+  margin: 0 auto;
+  transition: all 0.2s linear;
 }
 
-.second{
-    opacity: 0;
-    transition: all .2s linear;
+.first {
+  position: relative;
+  transform: translate(-6px, 11px) rotate(45deg);
+  transition: all 0.2s linear;
+  margin: 0 auto;
+}
+
+.second {
+  opacity: 0;
+  transition: all 0.2s linear;
 }
 
 #item:hover {
-cursor: pointer;
+  cursor: pointer;
 }
-#subitem{
-    display: none;
+#subitem {
+  display: none;
 }
-#subitem a{
-    display: block;
+#subitem a {
+  display: block;
 }
 .fixedNav {
-    position: sticky;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -o-sticky;
-    position: -ms-sticky;
-    top: -1px;
-    z-index: 8;
-    width: 100%;
-    margin:0 auto;
-    animation: fadedd 1s infinite;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  top: -1px;
+  z-index: 8;
+  width: 100%;
+  margin: 0 auto;
+  animation: fadedd 1s infinite;
 }
 @keyframes fadedd {
-    0%{ background-color: rgba (0, 0, 0, 0)};
-    100%{ background-color: rgba (0, 0, 0, 1)};
+  0% {
+    background-color: rgba (0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba (0, 0, 0, 1);
+  }
 }
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 main {
-    background-color: rgb(108, 108, 108);
-    margin: 0 auto;
-    width: 87.5%;
-    max-width: 768px;
-    height: auto;
-    padding: 0 20px;
+  background-color: rgb(108, 108, 108);
+  margin: 0 auto;
+  width: 87.5%;
+  max-width: 768px;
+  height: auto;
+  padding: 0 20px;
 }
 body {
-    background-color: rgb(193, 193, 206);
-    margin: 0 auto;
+  background-color: rgb(193, 193, 206);
+  margin: 0 auto;
 }
 
 nav {
-    
-    position: relative;
-    padding: 10px 0;
-    margin: 0 auto;
-    width: 100%;
-    background-color: rgb(0, 0, 80);
+  position: relative;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(0, 0, 80);
 }
 
 .clickMes {
-    display: inline-block;
-    padding: 3px;
-    background-color: rgb(0, 0, 80);
-    color: white;
-    font-size: 15pt;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 6px;
-} 
+  display: inline-block;
+  padding: 3px;
+  background-color: rgb(0, 0, 80);
+  color: white;
+  font-size: 15pt;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
 
 .clickMes:active {
-    color: cyan;
+  color: cyan;
 }
 
 .clickMes:hover {
-   background-color: rgb(0, 0, 160);
+  background-color: rgb(0, 0, 160);
 }
 
-nav a{
-    color: #FAFAFA;
-    font-size: 18pt;
-    text-decoration: none;
-    margin: 10px;
+nav a {
+  color: #fafafa;
+  font-size: 18pt;
+  text-decoration: none;
+  margin: 10px;
 }
-nav li{
-    display: block;
-    text-decoration: none;
+nav li {
+  display: block;
+  text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav a:active {
-    background-color: #5E5E5E;
-    transition: 0s;
-    -moz-transition: 0s;
-   -webkit-transition: 0s;
+  background-color: #5e5e5e;
+  transition: 0s;
+  -moz-transition: 0s;
+  -webkit-transition: 0s;
 }
 
 #img1 {
-    opacity: 0;
+  opacity: 0;
 }
 #img4 {
-    background-image: url(../images/app.JPG);
-    background-size: 200px 105px;
-    width: 200px;
-    height: 105px;
-    margin: 0;
-    transition: 0.4s ease;
+  background-image: url(../images/app.JPG);
+  background-size: 200px 105px;
+  width: 200px;
+  height: 105px;
+  margin: 0;
+  transition: 0.4s ease;
 }
-#gamer{
-    padding-bottom: 85px;
-    padding-right: 200px;
+#gamer {
+  padding-bottom: 85px;
+  padding-right: 200px;
 }
 .slide {
-    position: relative;
+  position: relative;
 
-    animation: slideA 1.3s normal;
-    opacity: 1;
+  animation: slideA 1.3s normal;
+  opacity: 1;
 }
 
 .slideback {
-    position: relative;
+  position: relative;
 
-    animation: slideB .5s normal;
-    opacity: 1;
+  animation: slideB 0.5s normal;
+  opacity: 1;
 }
 
 @keyframes slideA {
-    0% {
-        opacity: 0;
-        left: -600px;
-    }
-    100% {
-        opacity: 1;
-        left: 1px;
-    }
-
+  0% {
+    opacity: 0;
+    left: -600px;
+  }
+  100% {
+    opacity: 1;
+    left: 1px;
+  }
 }
 
 @keyframes slideB {
-    100% {
-        opacity: 0;
-        left: -600px;
-    }
-    0% {
-        opacity: 1;
-        left: 1px;
-    }
-
+  100% {
+    opacity: 0;
+    left: -600px;
+  }
+  0% {
+    opacity: 1;
+    left: 1px;
+  }
 }
 
 /*img styling*/
 
 #hea {
-    color: white;
-    font-size: 16pt;
-    text-align: center;
-    width: 100%;
-    max-width: 780px;
-    padding: 0;
+  color: white;
+  font-size: 16pt;
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  padding: 0;
 }
 
 header {
-    position: relative;
-    background-color:rgb(0, 0, 56);
-    margin: auto;
-    max-width: 780px;
+  position: relative;
+  background-color: rgb(0, 0, 56);
+  margin: auto;
+  max-width: 780px;
 }
 
-
 footer {
-    position: relative;
-    background-color: #303030;
-    margin: auto;
-    font-size: 12pt;
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
+  position: relative;
+  background-color: #303030;
+  margin: auto;
+  font-size: 12pt;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
 }
 
 footer li {
-    display: inline-block;
-    text-decoration: none;    
+  display: inline-block;
+  text-decoration: none;
 }
 
 footer a {
-    color: white; 
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #read {
-    font-size: 16pt;
-    color: white;
+  font-size: 16pt;
+  color: white;
 }
 
 #li {
-    position: relative;
-    width: 120px;
-    text-align: center;
-    left: 20%;
+  position: relative;
+  width: 120px;
+  text-align: center;
+  left: 20%;
 }
 
 #facebook {
-    color: #4267b2;
+  color: #4267b2;
 }
 
-
 #youtube {
-    color: red;
-
+  color: red;
 }
 
 #facebook:active {
-    color: white;
-
+  color: white;
 }
 
 small {
-    color: white;
+  color: white;
 }
 
-
 #youtube:active {
-    color: white;
-
+  color: white;
 }
 
 #linkedIn {
-    color: #028181;
+  color: #028181;
 }
 
 #linkedIn:active {
-    color: white;
+  color: white;
 }
 
 #github {
-    color: purple;
+  color: purple;
 }
 
 #github:active {
-    color: white;
+  color: white;
 }
-
 
 /* About me */
 #oneLine {
-   padding: 120px 20px;
-   color: white;
+  padding: 120px 20px;
+  color: white;
 }
 
 #me {
-    position: absolute;
-    right: 102%;
-    top: -40px;
-    opacity: 1;
-    animation: cc 1s normal;
-    max-width: 140px;
-    width: 100%;
+  position: absolute;
+  right: 102%;
+  top: -40px;
+  opacity: 1;
+  animation: cc 1s normal;
+  max-width: 140px;
+  width: 100%;
 }
 iframe {
-    max-width: 300px;
-    width: 100%;
+  max-width: 300px;
+  width: 100%;
 }
 .h1 {
-    text-align: left;
-    position: absolute;
-    display: block;
-    width: 100%;
-    max-width: 170px;
-    left: 150px;
-    top: 60px;
+  text-align: left;
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  left: 150px;
+  top: 60px;
 }
 .h1 h1 {
-    width: 170px;
+  width: 170px;
 }
-.h1 h2 { 
-    width: 170px;
-    display: block;
+.h1 h2 {
+  width: 170px;
+  display: block;
 }
-.h1 h3 { 
-    width: 170px;
-    display: block;
+.h1 h3 {
+  width: 170px;
+  display: block;
 }
 .h1 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .h1 a:hover {
-    background-color: gray;
+  background-color: gray;
 }
 
 @keyframes cc {
-    0% {
-        right: 200%;
-        opacity: 0;
-    }
-    50% {
-        position: absolute;
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    right: 200%;
+    opacity: 0;
+  }
+  50% {
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #video {
-    position: relative;
-    max-width: 300px;
-    width: 100%;
-    height: 200px;
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
 }
 /*Interest  */
 
 #iback {
-    background-image: url(../images/PsVr.JPG);
-    background-repeat: no-repeat;
-    background-color: #020239;
-    background-size: cover;
-    margin: auto;
-
+  background-image: url(../images/PsVr.JPG);
+  background-repeat: no-repeat;
+  background-color: #020239;
+  background-size: cover;
+  margin: auto;
 }
 
 #ivideo {
-    position: relative;
-    margin-bottom: 30px;
-    left: 30%;
+  position: relative;
+  margin-bottom: 30px;
+  left: 30%;
 }
 
 #ivideo2 {
-    margin-top: 80px;
-    position: relative;
-    margin-bottom: 40px;
-
+  margin-top: 80px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .smallP1 {
-    position: absolute;
-    width: 110px;
-    right: 100%;
+  position: absolute;
+  width: 110px;
+  right: 100%;
 }
 
 .smallP2 {
-    position: absolute;
-    width: 120px;
-    left: 67%;
-    font-size: 12pt;
-
+  position: absolute;
+  width: 120px;
+  left: 67%;
+  font-size: 12pt;
 }
 
 /*Hobbies  */
@@ -513,145 +500,146 @@ iframe {
 /*Contacts  */
 
 legend {
-    text-shadow: 2px 2px 4px white;
-    font-size: 34pt;
-    font-weight: bold;
-    animation: appear 2s normal;
+  text-shadow: 2px 2px 4px white;
+  font-size: 34pt;
+  font-weight: bold;
+  animation: appear 2s normal;
 }
 
 form {
-    position: relative; 
-    animation: open 1s normal;
-    font-size: 17pt;
-    position: relative;
-    margin: auto;
-    width: 320px;
-    background-color: rgba(200, 200, 208, 0.26);
+  position: relative;
+  animation: open 1s normal;
+  font-size: 17pt;
+  position: relative;
+  margin: auto;
+  width: 320px;
+  background-color: rgba(200, 200, 208, 0.26);
 }
 
 @keyframes open {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 518px;
-    }
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 518px;
+  }
 }
 
 input {
-    animation: appear 2s normal;
-    width: 99%;
-    border-radius: 5px;
+  animation: appear 2s normal;
+  width: 99%;
+  border-radius: 5px;
 }
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #EmailCenter {
-    margin-top: 1%;
-    width: 98.7%;
-    border-radius: 5px;
-    animation: appear 2s normal;
+  margin-top: 1%;
+  width: 98.7%;
+  border-radius: 5px;
+  animation: appear 2s normal;
 }
 
 #submit {
-    position: relative;
-    width: auto;
-    color: white;
-    background-color: darkblue;
-    outline: none;
-    font-size: 16pt;
-    padding: 5px;
-    border-radius: 8px;
+  position: relative;
+  width: auto;
+  color: white;
+  background-color: darkblue;
+  outline: none;
+  font-size: 16pt;
+  padding: 5px;
+  border-radius: 8px;
 }
 
-#submit:active{
-    color: cyan;
-    background-color: rgb(0, 0, 75);
+#submit:active {
+  color: cyan;
+  background-color: rgb(0, 0, 75);
 }
 
 #backgroundImg {
-    position: fixed;
-    z-index: 0;
-    width: 100%;
-    height: 1100px;
-    left: 0;
-    top: -250px;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 1100px;
+  left: 0;
+  top: -250px;
 }
 
 /*Portfolio*/
 
 #matchingCards {
-    background-image: url(../images/app.JPG);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    padding-bottom: 50.8%;
+  background-image: url(../images/app.JPG);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 50.8%;
 }
 
 #colorGame {
-    background-image: url(../images/colors.JPG);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    padding-bottom: 65%;
+  background-image: url(../images/colors.JPG);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
 }
 
 #Circles {
-    background-image: url(../images/Circles.png);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    padding-bottom: 65%;
+  background-image: url(../images/Circles.png);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
 }
 
 #BonisG {
-    background-image: url(../images/BonisGarage.JPG);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    padding-bottom: 65%;
+  background-image: url(../images/BonisGarage.JPG);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
 }
 
 #Todo {
-    background-image: url(../images/Todo.JPG);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    padding-bottom: 65%;
+  background-image: url(../images/Todo.JPG);
+  background-size: contain;
+  background-position: center;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
 }
 
 #games {
-    text-align: center;
-    font-size: 16pt;
-    max-width: 400px;
-    width: 100%;
-    color: white;
+  text-align: center;
+  font-size: 16pt;
+  max-width: 400px;
+  width: 100%;
+  color: white;
 }
 
 #games a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-#games a[href"#"]{
-    text-decoration: none;
+#games a[href"#"] {
+  text-decoration: none;
 }
 
 #games a:active {
-    background-color: black;
+  background-color: black;
 }
