@@ -243,7 +243,7 @@ nav a:active {
 
 .slide {
   position: relative;
-
+  offset: 50%;
   animation: slideA 1.3s normal;
   opacity: 1;
 }

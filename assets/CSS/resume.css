@@ -71,3 +71,17 @@ table td {
 .italic {
   font-style: italic;
 }
+.button {
+  position: fixed;
+  background-color: #00008b7e;
+  z-index: 3;
+  color: white;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
