@@ -116,6 +116,10 @@ button {
 .cirHamNav {
   border-radius: 50% !important;
   transition: all 0.2s linear !important;
+  -webkit-transition: all 0.2s linear !important;
+  -moz-transition: all 0.2s linear !important;
+  -ms-transition: all 0.2s linear !important;
+  -o-transition: all 0.2s linear !important;
 }
 #item div:nth-child(1) {
   position: relative;
@@ -604,6 +608,34 @@ input {
   padding-bottom: 65%;
 }
 
+#Nacho {
+  background-image: url(../images/PotatoWeb.PNG);
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
+}
+#BDH {
+  background-image: url(../images/BDH.JPG);
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
+}
+
+#StopWatch {
+  background-image: url(../images/stopwatch.JPG);
+  background-size: 100% 100%;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 65%;
+}
+
 #BonisG {
   background-image: url(../images/BonisGarage.JPG);
   background-size: cover;
@@ -615,8 +647,7 @@ input {
 
 #Todo {
   background-image: url(../images/Todo.JPG);
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
   display: block;
   width: 100%;
   max-width: 720px;

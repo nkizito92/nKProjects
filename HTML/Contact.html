@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/assets/CSS/main.css">
-    <link rel="shortcut icon" href="../assets/images\mylogo.png">
+    <link rel="stylesheet" type="text/css" href="../assets/CSS/main.css">
+    <link rel="shortcut icon" href="../assets/images/mylogo.png">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -16,18 +16,22 @@
      <nav>
         <!--my navigation bar -->
         <ul>
-            <li> <a href="../index.html" title="Home"><img src="../assets/images/mylogo3.png" draggable="false">Nkizitos<span>Creative Web</span></a></li>
-            <li> <a href="../index.html">Home</a></li>
+            <a href="../index.html" title="Home"
+            ><img src="../assets/images/navLogo.png" draggable="false"
+          /></a>
+        </li>
+        <li><a href="../index.html">Home</a></li>
             <li> <a href="AboutMe.html">About Me</a></li>
             <li> <a href="Interest.html">Interest</a></li>
-            <li> <a id="path" href="Contact.php" style="text-decoration: underline">Contact</a></li>
+            <li> <a id="path" href="Contact.html" style="text-decoration: underline">Contact</a></li>
             <li> <a href="Portfolio.html">Portfolio</a></li>
         </ul>
 
     </nav>
     
     <?php include('ContactformProcess.php'); ?>  
-    <form name="formSub" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+    <form name="formSub" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>
+        <!-- " method="post"> -->
         <legend  align="center">CONTACT ME</legend>
         <br>
        <input name="name" type="text" placeholder="FullName" required>

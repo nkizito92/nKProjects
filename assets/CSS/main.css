@@ -594,6 +594,33 @@ input {
   max-width: 400px;
   height: 260px;
 }
+#Nacho {
+  background-image: url(../images/PotatoWeb.PNG);
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 260px;
+}
+
+#BDH {
+  background-image: url(../images/BDH.JPG);
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 260px;
+}
+#StopWatch {
+  background-image: url(../images/stopwatch.JPG);
+  background-size: 100% 100%;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 260px;
+}
 #Todo {
   background-image: url(../images/Todo.JPG);
   background-size: cover;
@@ -615,7 +642,7 @@ input {
   color: white;
   text-decoration: none;
 }
-#games a[href="#"] {
+#games a[href"#"] {
   text-decoration: none;
 }
 
